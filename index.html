@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Sparkling Alice | Premium Car Detailing</title>
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0"
+>
 
-<meta name="description" content="Sparkling Alice provides premium vehicle detailing, steam cleaning, ceramic coating, protection film and wheel care. Contact us for a quote.">
+<title>
+  Sparkling Alice | Premium Car Detailing
+</title>
+
+<meta
+  name="description"
+  content="Sparkling Alice provides premium vehicle detailing, steam cleaning, ceramic coating, protection film and wheel care. Contact us for a quote."
+>
 
 <style>
+
+/* =========================
+   GLOBAL
+========================= */
 
 :root{
   --bg:#06080b;
@@ -58,7 +73,10 @@ section{
   padding:90px 0;
 }
 
-/* NAVIGATION */
+
+/* =========================
+   NAVIGATION
+========================= */
 
 nav{
   position:fixed;
@@ -92,7 +110,7 @@ nav{
 
 .nav-links{
   display:flex;
-  gap:28px;
+  gap:25px;
   align-items:center;
 }
 
@@ -113,7 +131,10 @@ nav{
   border-radius:8px;
 }
 
-/* HERO */
+
+/* =========================
+   HERO
+========================= */
 
 .hero{
   min-height:100vh;
@@ -203,7 +224,10 @@ nav{
   color:var(--accent-light);
 }
 
-/* HEADINGS */
+
+/* =========================
+   HEADINGS
+========================= */
 
 .section-heading{
   max-width:700px;
@@ -230,7 +254,10 @@ nav{
   color:var(--muted);
 }
 
-/* SERVICES */
+
+/* =========================
+   SERVICES
+========================= */
 
 .services{
   background:var(--bg2);
@@ -272,7 +299,10 @@ nav{
   font-size:15px;
 }
 
-/* WHY US */
+
+/* =========================
+   WHY US
+========================= */
 
 .why-grid{
   display:grid;
@@ -324,7 +354,10 @@ nav{
   font-size:14px;
 }
 
-/* GALLERY */
+
+/* =========================
+   GALLERY
+========================= */
 
 .showcase{
   background:var(--bg2);
@@ -370,7 +403,102 @@ nav{
   font-weight:800;
 }
 
-/* PROCESS */
+
+/* =========================
+   REVIEWS
+========================= */
+
+.reviews{
+  background:var(--bg);
+  text-align:center;
+}
+
+.reviews .section-heading{
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.google-rating{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:14px;
+  margin-bottom:40px;
+}
+
+.rating-number{
+  font-size:52px;
+  font-weight:900;
+  line-height:1;
+}
+
+.stars{
+  color:var(--accent-light);
+  font-size:26px;
+  letter-spacing:3px;
+}
+
+.rating-text{
+  color:var(--muted);
+  font-size:14px;
+  text-align:left;
+}
+
+.review-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+  margin-bottom:35px;
+}
+
+.review-card{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:16px;
+  padding:30px;
+  text-align:left;
+  transition:.25s;
+}
+
+.review-card:hover{
+  transform:translateY(-5px);
+  border-color:rgba(212,175,55,.45);
+}
+
+.review-stars{
+  color:var(--accent-light);
+  font-size:18px;
+  letter-spacing:2px;
+  margin-bottom:18px;
+}
+
+.review-card h3{
+  font-size:18px;
+  margin-bottom:12px;
+}
+
+.review-card p{
+  color:var(--muted);
+  font-size:14px;
+  line-height:1.75;
+  margin-bottom:18px;
+}
+
+.review-author{
+  color:var(--accent-light);
+  font-size:13px;
+  font-weight:900;
+}
+
+.review-cta{
+  display:inline-block;
+  margin-top:5px;
+}
+
+
+/* =========================
+   PROCESS
+========================= */
 
 .process-grid{
   display:grid;
@@ -402,7 +530,10 @@ nav{
   font-size:14px;
 }
 
-/* CTA */
+
+/* =========================
+   CTA
+========================= */
 
 .cta{
   padding:110px 0;
@@ -430,7 +561,10 @@ nav{
   margin:0 auto 30px;
 }
 
-/* CONTACT */
+
+/* =========================
+   CONTACT
+========================= */
 
 .contact{
   background:var(--bg2);
@@ -482,7 +616,10 @@ nav{
   color:var(--accent-light);
 }
 
-/* FORM */
+
+/* =========================
+   FORM
+========================= */
 
 .form{
   background:var(--card);
@@ -545,39 +682,10 @@ textarea{
   font:inherit;
 }
 
-/* SUCCESS MESSAGE */
 
-.success-box{
-  text-align:center;
-  padding:45px 20px;
-}
-
-.success-icon{
-  width:70px;
-  height:70px;
-  margin:0 auto 25px;
-  border-radius:50%;
-  background:rgba(212,175,55,.12);
-  border:1px solid rgba(212,175,55,.35);
-  display:grid;
-  place-items:center;
-  color:var(--accent-light);
-  font-size:30px;
-  font-weight:900;
-}
-
-.success-box h2{
-  font-size:32px;
-  margin-bottom:12px;
-}
-
-.success-box p{
-  color:var(--muted);
-  max-width:450px;
-  margin:0 auto 28px;
-}
-
-/* FOOTER */
+/* =========================
+   FOOTER
+========================= */
 
 footer{
   border-top:1px solid var(--line);
@@ -599,13 +707,19 @@ footer{
   font-size:12px;
 }
 
-/* MOBILE CTA */
+
+/* =========================
+   MOBILE CTA
+========================= */
 
 .mobile-cta{
   display:none;
 }
 
-/* TABLET */
+
+/* =========================
+   TABLET
+========================= */
 
 @media(max-width:850px){
 
@@ -622,7 +736,8 @@ footer{
   }
 
   .service-grid,
-  .process-grid{
+  .process-grid,
+  .review-grid{
     grid-template-columns:1fr;
   }
 
@@ -667,7 +782,10 @@ footer{
 
 }
 
-/* PHONE */
+
+/* =========================
+   PHONE
+========================= */
 
 @media(max-width:550px){
 
@@ -708,6 +826,18 @@ footer{
     grid-column:auto;
   }
 
+  .google-rating{
+    flex-wrap:wrap;
+  }
+
+  .rating-text{
+    text-align:center;
+  }
+
+  .review-card{
+    padding:25px;
+  }
+
   .footer-inner{
     flex-direction:column;
     text-align:center;
@@ -716,11 +846,16 @@ footer{
 }
 
 </style>
+
 </head>
+
 
 <body>
 
-<!-- NAVIGATION -->
+
+<!-- =========================
+     NAVIGATION
+========================= -->
 
 <nav>
 
@@ -732,13 +867,25 @@ footer{
 
     <div class="nav-links">
 
-      <a href="#services">Services</a>
+      <a href="#services">
+        Services
+      </a>
 
-      <a href="#why">Why Us</a>
+      <a href="#why">
+        Why Us
+      </a>
 
-      <a href="#work">Our Work</a>
+      <a href="#work">
+        Our Work
+      </a>
 
-      <a href="#process">How It Works</a>
+      <a href="#reviews">
+        Reviews
+      </a>
+
+      <a href="#process">
+        How It Works
+      </a>
 
       <a href="#contact" class="nav-button">
         GET A QUOTE
@@ -751,7 +898,9 @@ footer{
 </nav>
 
 
-<!-- HERO -->
+<!-- =========================
+     HERO
+========================= -->
 
 <header class="hero">
 
@@ -799,9 +948,14 @@ footer{
 </header>
 
 
-<!-- SERVICES -->
+<!-- =========================
+     SERVICES
+========================= -->
 
-<section class="services" id="services">
+<section
+  class="services"
+  id="services"
+>
 
   <div class="container">
 
@@ -823,7 +977,9 @@ footer{
 
     </div>
 
+
     <div class="service-grid">
+
 
       <div class="service">
 
@@ -843,6 +999,7 @@ footer{
 
       </div>
 
+
       <div class="service">
 
         <div class="service-number">
@@ -860,6 +1017,7 @@ footer{
         </p>
 
       </div>
+
 
       <div class="service">
 
@@ -879,6 +1037,7 @@ footer{
 
       </div>
 
+
       <div class="service">
 
         <div class="service-number">
@@ -896,6 +1055,7 @@ footer{
         </p>
 
       </div>
+
 
       <div class="service">
 
@@ -915,6 +1075,7 @@ footer{
 
       </div>
 
+
       <div class="service">
 
         <div class="service-number">
@@ -933,6 +1094,7 @@ footer{
 
       </div>
 
+
     </div>
 
   </div>
@@ -940,13 +1102,16 @@ footer{
 </section>
 
 
-<!-- WHY US -->
+<!-- =========================
+     WHY US
+========================= -->
 
 <section id="why">
 
   <div class="container">
 
     <div class="why-grid">
+
 
       <div class="why-image">
 
@@ -956,6 +1121,7 @@ footer{
         >
 
       </div>
+
 
       <div>
 
@@ -978,7 +1144,9 @@ footer{
 
         </div>
 
+
         <div class="features">
+
 
           <div class="feature">
 
@@ -1000,6 +1168,7 @@ footer{
 
           </div>
 
+
           <div class="feature">
 
             <div class="feature-icon">
@@ -1019,6 +1188,7 @@ footer{
             </div>
 
           </div>
+
 
           <div class="feature">
 
@@ -1040,6 +1210,7 @@ footer{
 
           </div>
 
+
         </div>
 
       </div>
@@ -1051,11 +1222,17 @@ footer{
 </section>
 
 
-<!-- GALLERY -->
+<!-- =========================
+     GALLERY
+========================= -->
 
-<section class="showcase" id="work">
+<section
+  class="showcase"
+  id="work"
+>
 
   <div class="container">
+
 
     <div class="section-heading">
 
@@ -1075,7 +1252,9 @@ footer{
 
     </div>
 
+
     <div class="gallery">
+
 
       <div class="gallery-item">
 
@@ -1090,6 +1269,7 @@ footer{
 
       </div>
 
+
       <div class="gallery-item">
 
         <img
@@ -1102,6 +1282,7 @@ footer{
         </div>
 
       </div>
+
 
       <div class="gallery-item">
 
@@ -1116,6 +1297,7 @@ footer{
 
       </div>
 
+
       <div class="gallery-item">
 
         <img
@@ -1128,6 +1310,7 @@ footer{
         </div>
 
       </div>
+
 
       <div class="gallery-item">
 
@@ -1142,6 +1325,7 @@ footer{
 
       </div>
 
+
     </div>
 
   </div>
@@ -1149,7 +1333,168 @@ footer{
 </section>
 
 
-<!-- PROCESS -->
+<!-- =========================
+     REVIEWS
+========================= -->
+
+<section
+  class="reviews"
+  id="reviews"
+>
+
+  <div class="container">
+
+
+    <div class="section-heading">
+
+      <div class="eyebrow">
+        Customer Reviews
+      </div>
+
+      <h2>
+        Loved By Our Customers.
+      </h2>
+
+      <p>
+        See what customers are saying about
+        Sparkling Alice.
+      </p>
+
+    </div>
+
+
+    <div class="google-rating">
+
+      <div class="rating-number">
+        5.0
+      </div>
+
+      <div>
+
+        <div class="stars">
+          ★★★★★
+        </div>
+
+        <div class="rating-text">
+          Google Rating
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="review-grid">
+
+
+      <!-- REVIEW 1 -->
+
+      <div class="review-card">
+
+        <div class="review-stars">
+          ★★★★★
+        </div>
+
+        <h3>
+          Fantastic Service
+        </h3>
+
+        <p>
+          “We had a PYEC work car cleaned.
+          They were very accommodating on time
+          and the work was fantastic. They got
+          food stains removed from our canvas seat
+          covers thought were going to be there
+          forever! We will def use again.”
+        </p>
+
+        <div class="review-author">
+          — Rick Howard
+        </div>
+
+      </div>
+
+
+      <!-- REVIEW 2 -->
+
+      <div class="review-card">
+
+        <div class="review-stars">
+          ★★★★★
+        </div>
+
+        <h3>
+          Looks Brand New
+        </h3>
+
+        <p>
+          “I used this company for high-quality car
+          detailing on the company car that was
+          provided to me. When received the car,
+          it was in very poor condition and extremely
+          dirty due to frequent out-of-town trips.
+          The team did an incredible job; the car now
+          looks brand new. Highly recommend this
+          business to anyone looking for detailing
+          services. They are very professional, timely,
+          and their prices are competitive. Excellent job!”
+        </p>
+
+        <div class="review-author">
+          — Antonio Favale
+        </div>
+
+      </div>
+
+
+      <!-- REVIEW 3 -->
+
+      <div class="review-card">
+
+        <div class="review-stars">
+          ★★★★★
+        </div>
+
+        <h3>
+          Amazing Results
+        </h3>
+
+        <p>
+          “I took my 15 year old Amarok to the team
+          at Sparkling Alice for a detail inside and out.
+          When picked it up the next day it looked brand
+          new. These guys are amazing. I'm taking my
+          son's car there.”
+        </p>
+
+        <div class="review-author">
+          — Darrin Kean
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+    <a
+      href="https://share.google/MbUvObyw9UhQbVkDP"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="btn btn-primary review-cta"
+    >
+      LEAVE US A GOOGLE REVIEW →
+    </a>
+
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     PROCESS
+========================= -->
 
 <section id="process">
 
@@ -1186,6 +1531,7 @@ footer{
 
       </div>
 
+
       <div class="step">
 
         <div class="step-number">
@@ -1202,6 +1548,7 @@ footer{
         </p>
 
       </div>
+
 
       <div class="step">
 
@@ -1227,7 +1574,9 @@ footer{
 </section>
 
 
-<!-- CTA -->
+<!-- =========================
+     CTA
+========================= -->
 
 <section class="cta">
 
@@ -1254,13 +1603,19 @@ footer{
 </section>
 
 
-<!-- CONTACT -->
+<!-- =========================
+     CONTACT
+========================= -->
 
-<section class="contact" id="contact">
+<section
+  class="contact"
+  id="contact"
+>
 
   <div class="container">
 
     <div class="contact-grid">
+
 
       <div class="contact-info">
 
@@ -1291,6 +1646,7 @@ footer{
 
           </div>
 
+
           <div class="contact-detail">
 
             <small>
@@ -1303,6 +1659,7 @@ footer{
 
           </div>
 
+
           <div class="contact-detail">
 
             <small>
@@ -1314,6 +1671,7 @@ footer{
             </strong>
 
           </div>
+
 
           <div class="contact-detail">
 
@@ -1483,7 +1841,9 @@ footer{
 </section>
 
 
-<!-- FOOTER -->
+<!-- =========================
+     FOOTER
+========================= -->
 
 <footer>
 
@@ -1502,7 +1862,9 @@ footer{
 </footer>
 
 
-<!-- MOBILE CTA -->
+<!-- =========================
+     MOBILE CTA
+========================= -->
 
 <a
   href="tel:0478525477"
@@ -1511,6 +1873,10 @@ footer{
   CALL SPARKLING ALICE — 0478 525 477
 </a>
 
+
+<!-- =========================
+     JAVASCRIPT
+========================= -->
 
 <script>
 
@@ -1572,5 +1938,8 @@ ${message}`
 
 </script>
 
+
 </body>
+
 </html>
+        
