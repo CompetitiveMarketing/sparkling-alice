@@ -16,7 +16,8 @@
   --card:#11171d;
   --text:#f5f8fb;
   --muted:#a8b2bd;
-  --accent:#63d8ff;
+  --accent:#d4af37;
+  --accent-light:#f0d77a;
   --line:rgba(255,255,255,.09);
   --max:1200px;
 }
@@ -107,7 +108,7 @@ nav{
 
 .nav-button{
   background:var(--accent);
-  color:#031016!important;
+  color:#080808!important;
   padding:12px 18px;
   border-radius:8px;
 }
@@ -140,9 +141,9 @@ nav{
 .badge{
   display:inline-block;
   padding:8px 13px;
-  border:1px solid rgba(99,216,255,.35);
+  border:1px solid rgba(212,175,55,.45);
   border-radius:30px;
-  color:var(--accent);
+  color:var(--accent-light);
   font-size:12px;
   font-weight:800;
   letter-spacing:1.5px;
@@ -158,7 +159,7 @@ nav{
 }
 
 .hero h1 span{
-  color:var(--accent);
+  color:var(--accent-light);
 }
 
 .hero p{
@@ -184,11 +185,12 @@ nav{
 
 .btn-primary{
   background:var(--accent);
-  color:#031016;
+  color:#080808;
 }
 
 .btn-primary:hover{
   transform:translateY(-2px);
+  background:var(--accent-light);
 }
 
 .btn-secondary{
@@ -198,7 +200,7 @@ nav{
 
 .btn-secondary:hover{
   border-color:var(--accent);
-  color:var(--accent);
+  color:var(--accent-light);
 }
 
 /* HEADINGS */
@@ -209,7 +211,7 @@ nav{
 }
 
 .eyebrow{
-  color:var(--accent);
+  color:var(--accent-light);
   text-transform:uppercase;
   letter-spacing:2px;
   font-size:12px;
@@ -250,11 +252,11 @@ nav{
 
 .service:hover{
   transform:translateY(-6px);
-  border-color:rgba(99,216,255,.45);
+  border-color:rgba(212,175,55,.5);
 }
 
 .service-number{
-  color:var(--accent);
+  color:var(--accent-light);
   font-weight:900;
   font-size:13px;
   margin-bottom:30px;
@@ -305,11 +307,11 @@ nav{
   height:42px;
   min-width:42px;
   border-radius:10px;
-  background:rgba(99,216,255,.1);
-  border:1px solid rgba(99,216,255,.2);
+  background:rgba(212,175,55,.1);
+  border:1px solid rgba(212,175,55,.25);
   display:grid;
   place-items:center;
-  color:var(--accent);
+  color:var(--accent-light);
   font-weight:900;
 }
 
@@ -386,7 +388,7 @@ nav{
 .step-number{
   font-size:45px;
   font-weight:900;
-  color:rgba(99,216,255,.25);
+  color:rgba(212,175,55,.28);
   line-height:1;
   margin-bottom:25px;
 }
@@ -476,6 +478,10 @@ nav{
   font-weight:800;
 }
 
+.contact-detail a:hover{
+  color:var(--accent-light);
+}
+
 /* FORM */
 
 .form{
@@ -551,11 +557,11 @@ textarea{
   height:70px;
   margin:0 auto 25px;
   border-radius:50%;
-  background:rgba(99,216,255,.12);
-  border:1px solid rgba(99,216,255,.35);
+  background:rgba(212,175,55,.12);
+  border:1px solid rgba(212,175,55,.35);
   display:grid;
   place-items:center;
-  color:var(--accent);
+  color:var(--accent-light);
   font-size:30px;
   font-weight:900;
 }
@@ -647,7 +653,7 @@ footer{
     right:15px;
     z-index:999;
     background:var(--accent);
-    color:#031016;
+    color:#080808;
     text-align:center;
     padding:15px;
     border-radius:10px;
@@ -712,9 +718,7 @@ footer{
 </style>
 </head>
 
-
 <body>
-
 
 <!-- NAVIGATION -->
 
@@ -819,9 +823,7 @@ footer{
 
     </div>
 
-
     <div class="service-grid">
-
 
       <div class="service">
 
@@ -841,7 +843,6 @@ footer{
 
       </div>
 
-
       <div class="service">
 
         <div class="service-number">
@@ -859,7 +860,6 @@ footer{
         </p>
 
       </div>
-
 
       <div class="service">
 
@@ -879,7 +879,6 @@ footer{
 
       </div>
 
-
       <div class="service">
 
         <div class="service-number">
@@ -897,7 +896,6 @@ footer{
         </p>
 
       </div>
-
 
       <div class="service">
 
@@ -917,7 +915,6 @@ footer{
 
       </div>
 
-
       <div class="service">
 
         <div class="service-number">
@@ -936,7 +933,6 @@ footer{
 
       </div>
 
-
     </div>
 
   </div>
@@ -952,7 +948,6 @@ footer{
 
     <div class="why-grid">
 
-
       <div class="why-image">
 
         <img
@@ -961,7 +956,6 @@ footer{
         >
 
       </div>
-
 
       <div>
 
@@ -984,9 +978,7 @@ footer{
 
         </div>
 
-
         <div class="features">
-
 
           <div class="feature">
 
@@ -1008,7 +1000,6 @@ footer{
 
           </div>
 
-
           <div class="feature">
 
             <div class="feature-icon">
@@ -1029,7 +1020,6 @@ footer{
 
           </div>
 
-
           <div class="feature">
 
             <div class="feature-icon">
@@ -1049,7 +1039,6 @@ footer{
             </div>
 
           </div>
-
 
         </div>
 
@@ -1086,9 +1075,7 @@ footer{
 
     </div>
 
-
     <div class="gallery">
-
 
       <div class="gallery-item">
 
@@ -1103,7 +1090,6 @@ footer{
 
       </div>
 
-
       <div class="gallery-item">
 
         <img
@@ -1116,7 +1102,6 @@ footer{
         </div>
 
       </div>
-
 
       <div class="gallery-item">
 
@@ -1131,7 +1116,6 @@ footer{
 
       </div>
 
-
       <div class="gallery-item">
 
         <img
@@ -1145,7 +1129,6 @@ footer{
 
       </div>
 
-
       <div class="gallery-item">
 
         <img
@@ -1158,7 +1141,6 @@ footer{
         </div>
 
       </div>
-
 
     </div>
 
@@ -1185,9 +1167,7 @@ footer{
 
     </div>
 
-
     <div class="process-grid">
-
 
       <div class="step">
 
@@ -1206,7 +1186,6 @@ footer{
 
       </div>
 
-
       <div class="step">
 
         <div class="step-number">
@@ -1224,7 +1203,6 @@ footer{
 
       </div>
 
-
       <div class="step">
 
         <div class="step-number">
@@ -1241,7 +1219,6 @@ footer{
         </p>
 
       </div>
-
 
     </div>
 
@@ -1285,7 +1262,6 @@ footer{
 
     <div class="contact-grid">
 
-
       <div class="contact-info">
 
         <div class="eyebrow">
@@ -1301,9 +1277,7 @@ footer{
           and what you're looking to have done.
         </p>
 
-
         <div class="contact-details">
-
 
           <div class="contact-detail">
 
@@ -1317,6 +1291,17 @@ footer{
 
           </div>
 
+          <div class="contact-detail">
+
+            <small>
+              Email
+            </small>
+
+            <a href="mailto:info@sparklingalice.com.au">
+              info@sparklingalice.com.au
+            </a>
+
+          </div>
 
           <div class="contact-detail">
 
@@ -1330,7 +1315,6 @@ footer{
 
           </div>
 
-
           <div class="contact-detail">
 
             <small>
@@ -1338,32 +1322,255 @@ footer{
             </small>
 
             <strong>
-              Request a personalised quote
+              Request a personalised quote based on your vehicle and needs.
             </strong>
 
           </div>
-
 
         </div>
 
       </div>
 
 
-      <!-- QUOTE FORM -->
+      <div class="form">
 
-      <form
-        class="form"
-        onsubmit="sendQuote(event)"
-      >
+        <form onsubmit="sendQuote(event)">
 
-        <div class="form-grid">
+          <div class="form-grid">
+
+            <div class="field">
+
+              <label for="name">
+                Your Name
+              </label>
+
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+              >
+
+            </div>
 
 
-          <div class="field">
+            <div class="field">
 
-            <label>
-              Your Name
-            </label>
+              <label for="phone">
+                Phone Number
+              </label>
 
-            <input
-              type="text
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                required
+              >
+
+            </div>
+
+
+            <div class="field">
+
+              <label for="email">
+                Email Address
+              </label>
+
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+              >
+
+            </div>
+
+
+            <div class="field">
+
+              <label for="vehicle">
+                Vehicle
+              </label>
+
+              <input
+                type="text"
+                id="vehicle"
+                name="vehicle"
+                placeholder="e.g. 2022 Toyota Hilux"
+                required
+              >
+
+            </div>
+
+
+            <div class="field full">
+
+              <label for="service">
+                Service Required
+              </label>
+
+              <select
+                id="service"
+                name="service"
+                required
+              >
+
+                <option value="">
+                  Select a service
+                </option>
+
+                <option value="Full Detailing">
+                  Full Detailing
+                </option>
+
+                <option value="Steam Cleaning">
+                  Steam Cleaning
+                </option>
+
+                <option value="Ceramic Coating">
+                  Ceramic Coating
+                </option>
+
+                <option value="Protection Film">
+                  Protection Film
+                </option>
+
+                <option value="Wheels & Tyres">
+                  Wheels & Tyres
+                </option>
+
+                <option value="Custom Package">
+                  Custom Package
+                </option>
+
+              </select>
+
+            </div>
+
+
+            <div class="field full">
+
+              <label for="message">
+                Tell Us About Your Vehicle
+              </label>
+
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Tell us what you'd like done..."
+              ></textarea>
+
+            </div>
+
+          </div>
+
+
+          <button
+            type="submit"
+            class="btn btn-primary"
+          >
+            REQUEST A FREE QUOTE →
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+  <div class="footer-inner">
+
+    <p>
+      © 2026 Sparkling Alice. All rights reserved.
+    </p>
+
+    <p>
+      Premium Vehicle Detailing & Protection
+    </p>
+
+  </div>
+
+</footer>
+
+
+<!-- MOBILE CTA -->
+
+<a
+  href="tel:0478525477"
+  class="mobile-cta"
+>
+  CALL SPARKLING ALICE — 0478 525 477
+</a>
+
+
+<script>
+
+function sendQuote(event){
+
+  event.preventDefault();
+
+  const name =
+    document.getElementById("name").value;
+
+  const phone =
+    document.getElementById("phone").value;
+
+  const email =
+    document.getElementById("email").value;
+
+  const vehicle =
+    document.getElementById("vehicle").value;
+
+  const service =
+    document.getElementById("service").value;
+
+  const message =
+    document.getElementById("message").value;
+
+
+  const subject =
+    encodeURIComponent(
+      "New Quote Request - Sparkling Alice"
+    );
+
+
+  const body =
+    encodeURIComponent(
+`New Quote Request
+
+Name: ${name}
+
+Phone: ${phone}
+
+Email: ${email}
+
+Vehicle: ${vehicle}
+
+Service Required: ${service}
+
+Message:
+${message}`
+    );
+
+
+  window.location.href =
+    "mailto:info@sparklingalice.com.au?subject="
+    + subject
+    + "&body="
+    + body;
+
+}
+
+</script>
+
+</body>
+</html>
