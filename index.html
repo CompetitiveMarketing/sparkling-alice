@@ -4,543 +4,1720 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#08090b">
-<meta name="description" content="Sparkling Alice provides touchless snow foam washing, vehicle detailing, interior cleaning and 4WD care in Alice Springs.">
-<title>Sparkling Alice | Vehicle Detailing & Touchless Washing</title>
+<meta name="description" content="Sparkling Alice vehicle detailing in Alice Springs. Interior detailing, touchless snow foam cleaning, 4WDs, campers and professional vehicle care.">
+
+<title>Sparkling Alice | Vehicle Detailing & Care</title>
+
 <style>
-:root{--bg:#08090b;--alt:#101317;--card:#171b20;--gold:#e6be40;--cream:#fff0ad;--muted:#b6bcc3;--line:#303238}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:85px}
-body{margin:0;background:var(--bg);color:#f7f7f5;font:16px/1.65 Arial,Helvetica,sans-serif}
-a{color:inherit;text-decoration:none}
-img{display:block;width:100%}
-button,input,select,textarea{font:inherit}
-.wrap{width:min(92%,1160px);margin:auto}
-section{padding:85px 0}
-h1,h2,h3,p{margin-top:0}
-h1,h2,h3{line-height:1.12}
-p{color:var(--muted)}
-.kicker{color:var(--gold);font-size:12px;font-weight:900;letter-spacing:2px;text-transform:uppercase}
-.heading{max-width:750px;margin-bottom:35px}
-.heading h2{font-size:clamp(34px,5vw,58px);letter-spacing:-2px;margin:12px 0 18px}
-.btn{display:inline-block;padding:14px 23px;border:1px solid #ffffff55;border-radius:8px;font-size:13px;font-weight:900;cursor:pointer;transition:.2s}
-.btn:hover{transform:translateY(-2px)}
-.primary{background:var(--gold);color:#101010;border-color:var(--gold)}
-.primary:hover{background:var(--cream)}
-nav{position:sticky;top:0;z-index:100;background:#08090bf2;backdrop-filter:blur(15px);border-bottom:1px solid var(--line)}
-.nav{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-.brand{display:flex;align-items:center;gap:12px;font-size:18px;font-weight:900;letter-spacing:1px}
-.brand img{width:65px;height:48px;object-fit:contain}
-.brand b{color:var(--gold)}
-.links{display:flex;align-items:center;gap:22px;font-size:13px;font-weight:800}
-.links a:hover{color:var(--gold)}
-.menu{display:none;background:transparent;border:1px solid var(--line);border-radius:7px;color:white;font-size:25px;padding:3px 12px;cursor:pointer}
-.hero{min-height:710px;display:flex;align-items:center;background:linear-gradient(90deg,#08090bf5,#08090bc7 48%,#08090b40),url("assets/1000006490.webp") center/cover}
-.hero-inner{max-width:800px;padding:80px 0}
-.hero h1{font-size:clamp(50px,8vw,92px);letter-spacing:-4px;line-height:.99;margin:22px 0 26px}
-.hero h1 em{font-style:normal;color:var(--cream)}
-.hero p{font-size:18px;max-width:610px;color:#e0e2e5}
-.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}
-.hero-points{display:flex;gap:22px;flex-wrap:wrap;margin-top:42px;font-size:12px;font-weight:800}
-.hero-points span:before{content:"✓ ";color:var(--gold)}
-.alt{background:var(--alt)}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
-.card img{height:225px;object-fit:cover}
-.card-body{padding:24px}
-.card small{color:var(--gold);font-weight:900;letter-spacing:1px}
-.card h3{font-size:21px;margin:12px 0}
-.card p{font-size:14px}
-.card a{color:var(--cream);font-size:12px;font-weight:900}
-.split{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
-.split>img{height:560px;object-fit:cover;border-radius:15px}
-.split h2{font-size:clamp(35px,5vw,58px);letter-spacing:-2px;margin:15px 0 22px}
-.ticks{list-style:none;padding:0;margin:25px 0 30px}
-.ticks li{padding:12px 0;border-bottom:1px solid var(--line);font-weight:700;font-size:14px}
-.ticks li:before{content:"✓";color:var(--gold);margin-right:12px}
-.gallery{display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:240px;gap:13px}
-.photo{position:relative;overflow:hidden;border-radius:12px;background:#202329}
-.photo.wide{grid-column:span 2}
-.photo img{height:100%;object-fit:cover;transition:.4s}
-.photo:hover img{transform:scale(1.05)}
-.photo strong{position:absolute;bottom:15px;left:15px;background:#08090be8;padding:8px 12px;border-radius:6px;font-size:11px;letter-spacing:.5px}
-.compare{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-.compare figure{position:relative;margin:0}
-.compare img{height:365px;object-fit:cover;border-radius:12px}
-.compare figcaption{position:absolute;top:15px;left:15px;background:#08090be8;color:var(--cream);padding:8px 13px;border-radius:6px;font-size:12px;font-weight:900}
-.note{font-size:13px;color:var(--muted);margin-top:17px}
-.reviewgrid,.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.review,.step{padding:27px;background:var(--card);border:1px solid var(--line);border-radius:14px}
-.stars,.number{color:var(--gold);font-weight:900}
-.stars{font-size:20px;letter-spacing:2px}
-.review h3,.step h3{font-size:19px;margin:16px 0 12px}
-.review p,.step p{font-size:14px}
-.review cite{font-size:13px;font-style:normal;color:var(--cream);font-weight:900}
-.number{font-size:45px;opacity:.65}
-.banner{text-align:center;background:linear-gradient(#08090bc8,#08090bf0),url("assets/1000006500.webp") center/cover}
-.banner h2{font-size:clamp(36px,6vw,68px);letter-spacing:-2px;margin:16px 0}
-.banner p{max-width:600px;margin:0 auto 28px;color:#e0e2e5}
-.contactgrid{display:grid;grid-template-columns:.9fr 1.1fr;gap:45px}
-.details{display:grid;gap:12px;margin-top:28px}
-.details div{background:var(--card);border:1px solid var(--line);border-radius:9px;padding:16px}
-.details small{display:block;color:var(--gold);font-size:11px;font-weight:900;letter-spacing:1px;text-transform:uppercase}
-.form{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:28px}
-.form h3{font-size:25px;margin-bottom:8px}
-.fields{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-.field{display:flex;flex-direction:column;gap:6px}
-.field.full{grid-column:1/-1}
-label{font-size:13px;font-weight:800}
-input,select,textarea{background:#090b0e;border:1px solid #383d42;color:white;border-radius:7px;padding:13px;width:100%}
-textarea{min-height:120px;resize:vertical}
-input:focus,select:focus,textarea:focus{outline:2px solid var(--gold);outline-offset:1px}
-.form button{width:100%;margin-top:20px}
-footer{border-top:1px solid var(--line);padding:28px 0;color:#a1a5aa;font-size:13px}
-.foot{display:flex;justify-content:space-between;gap:20px}
-.mobile-cta{display:none}
-@media(max-width:900px){
-.links{display:none;position:absolute;top:78px;left:0;right:0;background:#101317;padding:22px 4%;flex-direction:column;align-items:stretch;border-bottom:1px solid var(--line)}
-.links.open{display:flex}
-.menu{display:block}
-.cards,.reviewgrid,.steps{grid-template-columns:repeat(2,1fr)}
-.split,.contactgrid{grid-template-columns:1fr}
-.split>img{height:430px}
+:root{
+    --gold:#e6be40;
+    --cream:#fff0ad;
+    --bg:#08090b;
+    --panel:#14171b;
+    --muted:#b4b8bd;
+    --line:#303238;
 }
+
+*{
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+    scroll-padding-top:80px;
+}
+
+body{
+    margin:0;
+    background:var(--bg);
+    color:#f6f5f2;
+    font:16px/1.65 Arial,Helvetica,sans-serif;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+img{
+    display:block;
+    width:100%;
+}
+
+button,
+input,
+select,
+textarea{
+    font:inherit;
+}
+
+.wrap{
+    width:min(1160px,92%);
+    margin:auto;
+}
+
+section{
+    padding:95px 0;
+}
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:100;
+    background:#08090be8;
+    backdrop-filter:blur(15px);
+    border-bottom:1px solid var(--line);
+}
+
+.nav{
+    min-height:78px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:25px;
+}
+
+.brand{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    font-weight:900;
+    letter-spacing:.09em;
+}
+
+.brand img{
+    height:44px;
+    width:65px;
+    object-fit:contain;
+}
+
+.brand b{
+    color:var(--gold);
+}
+
+.links{
+    display:flex;
+    gap:24px;
+    align-items:center;
+    font-size:13px;
+    font-weight:800;
+}
+
+.links a:hover{
+    color:var(--gold);
+}
+
+.btn{
+    display:inline-block;
+    border:1px solid #ffffff40;
+    border-radius:7px;
+    padding:14px 22px;
+    font-weight:900;
+    font-size:13px;
+    letter-spacing:.03em;
+    transition:.2s;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+}
+
+.primary{
+    background:var(--gold);
+    color:#101010;
+    border-color:var(--gold);
+}
+
+.primary:hover{
+    background:var(--cream);
+}
+
+.hero{
+    min-height:700px;
+    display:flex;
+    align-items:center;
+    position:relative;
+
+    background:
+        linear-gradient(
+            90deg,
+            #08090bf2 5%,
+            #08090bba 44%,
+            #08090b25
+        ),
+        url("assets/1000006490.jpg") center 52%/cover no-repeat;
+}
+
+.hero .wrap{
+    position:relative;
+}
+
+.kicker{
+    font-size:12px;
+    letter-spacing:.22em;
+    color:var(--gold);
+    font-weight:900;
+    text-transform:uppercase;
+}
+
+.hero h1{
+    font-size:clamp(48px,7.5vw,92px);
+    line-height:.99;
+    letter-spacing:-.055em;
+    max-width:770px;
+    margin:18px 0 24px;
+}
+
+.hero h1 em{
+    font-style:normal;
+    color:var(--cream);
+}
+
+.hero p{
+    font-size:18px;
+    max-width:570px;
+    color:#e0e0df;
+}
+
+.actions{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-top:30px;
+}
+
+.intro{
+    background:#101317;
+}
+
+.heading{
+    max-width:730px;
+    margin-bottom:35px;
+}
+
+.heading h2{
+    font-size:clamp(32px,5vw,56px);
+    line-height:1.06;
+    letter-spacing:-.04em;
+    margin:12px 0;
+}
+
+.heading p,
+.card p,
+.copy p,
+.step p,
+.contact p{
+    color:var(--muted);
+}
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:16px;
+}
+
+.card{
+    border:1px solid var(--line);
+    border-radius:12px;
+    overflow:hidden;
+    background:var(--panel);
+}
+
+.card img{
+    height:230px;
+    object-fit:cover;
+}
+
+.card .body{
+    padding:23px;
+}
+
+.card small{
+    color:var(--gold);
+    font-weight:900;
+    letter-spacing:.12em;
+}
+
+.card h3{
+    font-size:21px;
+    line-height:1.2;
+    margin:12px 0;
+}
+
+.split{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.split>img{
+    height:570px;
+    object-fit:cover;
+    border-radius:13px;
+}
+
+.ticks{
+    padding:0;
+    list-style:none;
+}
+
+.ticks li{
+    padding:12px 0;
+    border-bottom:1px solid var(--line);
+}
+
+.ticks li:before{
+    content:"✓";
+    color:var(--gold);
+    font-weight:900;
+    margin-right:12px;
+}
+
+.showcase{
+    background:#101317;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:12px;
+}
+
+.photo{
+    position:relative;
+    overflow:hidden;
+    border-radius:10px;
+    min-height:245px;
+    background:#222;
+}
+
+.photo img{
+    height:100%;
+    min-height:245px;
+    object-fit:cover;
+    transition:transform .3s;
+}
+
+.photo:hover img{
+    transform:scale(1.04);
+}
+
+.photo strong{
+    position:absolute;
+    bottom:12px;
+    left:12px;
+    background:#08090bdc;
+    padding:8px 11px;
+    border-radius:5px;
+    font-size:12px;
+}
+
+.photo.wide{
+    grid-column:span 2;
+}
+
+.compare{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+    margin-top:20px;
+}
+
+.compare figure{
+    margin:0;
+    position:relative;
+}
+
+.compare img{
+    height:380px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.compare figcaption{
+    position:absolute;
+    top:14px;
+    left:14px;
+    background:#08090be0;
+    padding:7px 13px;
+    border-radius:5px;
+    font-weight:900;
+    color:var(--gold);
+}
+
+.note{
+    font-size:13px;
+    color:var(--muted);
+    margin-top:14px;
+}
+
+.reviews{
+    background:#101317;
+}
+
+.reviewgrid,
+.steps{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:16px;
+}
+
+.review,
+.step{
+    padding:25px;
+    background:var(--panel);
+    border:1px solid var(--line);
+    border-radius:12px;
+}
+
+.stars,
+.number{
+    color:var(--gold);
+    font-weight:900;
+}
+
+.review p{
+    font-size:14px;
+    color:#c6c9cc;
+}
+
+.review cite{
+    font-style:normal;
+    color:var(--cream);
+    font-size:13px;
+    font-weight:bold;
+}
+
+.number{
+    font-size:42px;
+    opacity:.65;
+}
+
+.banner{
+    text-align:center;
+
+    background:
+        linear-gradient(
+            #08090bbd,
+            #08090be8
+        ),
+        url("assets/1000006500.jpg") center/cover no-repeat;
+}
+
+.banner h2{
+    font-size:clamp(34px,6vw,66px);
+    line-height:1.05;
+}
+
+.contact{
+    background:#101317;
+}
+
+.contactgrid{
+    display:grid;
+    grid-template-columns:.9fr 1.1fr;
+    gap:45px;
+}
+
+.details{
+    display:grid;
+    gap:12px;
+    margin-top:25px;
+}
+
+.details div{
+    background:var(--panel);
+    border:1px solid var(--line);
+    border-radius:9px;
+    padding:15px;
+}
+
+.details small{
+    display:block;
+    color:var(--gold);
+    text-transform:uppercase;
+    font-weight:900;
+    letter-spacing:.1em;
+}
+
+.form{
+    padding:28px;
+    background:var(--panel);
+    border:1px solid var(--line);
+    border-radius:14px;
+}
+
+.fields{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:14px;
+}
+
+.field{
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+}
+
+.field.full{
+    grid-column:1/-1;
+}
+
+label{
+    font-size:13px;
+    font-weight:800;
+}
+
+input,
+select,
+textarea{
+    background:#090b0e;
+    border:1px solid #383d42;
+    color:#fff;
+    border-radius:7px;
+    padding:13px;
+    width:100%;
+}
+
+textarea{
+    min-height:110px;
+    resize:vertical;
+}
+
+button{
+    cursor:pointer;
+}
+
+.form .btn{
+    width:100%;
+    margin-top:18px;
+}
+
+footer{
+    border-top:1px solid var(--line);
+    padding:25px 0;
+    color:#a1a5aa;
+    font-size:13px;
+}
+
+.foot{
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+}
+
+.mobilecall{
+    display:none;
+}
+
+@media(max-width:850px){
+
+    .links{
+        display:none;
+    }
+
+    .services,
+    .reviewgrid,
+    .steps{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .split,
+    .contactgrid{
+        grid-template-columns:1fr;
+    }
+
+    .split>img{
+        height:430px;
+    }
+
+    .hero{
+        min-height:670px;
+        background-position:62% center;
+    }
+}
+
 @media(max-width:600px){
-section{padding:65px 0}
-.brand{font-size:14px}
-.brand img{width:49px}
-.hero{min-height:650px;background:linear-gradient(90deg,#08090bea,#08090ba8),url("assets/1000006490.webp") 60% center/cover}
-.hero h1{font-size:52px;letter-spacing:-2px}
-.hero p{font-size:16px}
-.actions{flex-direction:column}
-.actions .btn{text-align:center}
-.cards,.reviewgrid,.steps,.gallery,.compare,.fields{grid-template-columns:1fr}
-.photo.wide{grid-column:auto}
-.gallery{grid-auto-rows:260px}
-.compare img{height:290px}
-.field.full{grid-column:auto}
-.foot{flex-direction:column}
-.mobile-cta{display:block;position:fixed;bottom:12px;left:12px;right:12px;z-index:200;background:var(--gold);color:#101010;text-align:center;padding:13px;border-radius:9px;font-weight:900;box-shadow:0 4px 20px #0009}
-footer{padding-bottom:90px}
+
+    section{
+        padding:65px 0;
+    }
+
+    .brand{
+        font-size:14px;
+    }
+
+    .brand img{
+        width:50px;
+    }
+
+    .hero{
+        min-height:660px;
+
+        background:
+            linear-gradient(
+                90deg,
+                #08090be8,
+                #08090b9c
+            ),
+            url("assets/1000006490.jpg") 60% center/cover no-repeat;
+    }
+
+    .hero h1{
+        font-size:52px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .actions{
+        flex-direction:column;
+    }
+
+    .actions .btn{
+        text-align:center;
+    }
+
+    .services,
+    .reviewgrid,
+    .steps,
+    .gallery,
+    .compare,
+    .fields{
+        grid-template-columns:1fr;
+    }
+
+    .photo.wide{
+        grid-column:auto;
+    }
+
+    .compare img{
+        height:300px;
+    }
+
+    .foot{
+        flex-direction:column;
+    }
+
+    .mobilecall{
+        display:block;
+        position:fixed;
+        bottom:12px;
+        left:12px;
+        right:12px;
+        text-align:center;
+        background:var(--gold);
+        color:#101010;
+        padding:13px;
+        border-radius:9px;
+        font-weight:900;
+        z-index:200;
+        box-shadow:0 4px 20px #0009;
+    }
+
+    footer{
+        padding-bottom:85px;
+    }
 }
 </style>
 </head>
+
 <body>
 
 <nav>
-<div class="wrap nav">
-<a class="brand" href="#home">
-<img src="assets/1000006508.webp" alt="Sparkling Alice logo">
-<span>SPARKLING <b>ALICE</b></span>
-</a>
-<button class="menu" id="menuBtn" aria-label="Toggle navigation" aria-expanded="false">☰</button>
-<div class="links" id="navLinks">
-<a href="#services">Services</a>
-<a href="#touchless">Touchless Wash</a>
-<a href="#work">Our Work</a>
-<a href="#reviews">Reviews</a>
-<a href="#process">How It Works</a>
-<a class="btn primary" href="#contact">GET A QUOTE</a>
-</div>
-</div>
+    <div class="wrap nav">
+
+        <a class="brand" href="#home">
+
+            <img
+                src="assets/1000006508.png"
+                alt="Sparkling Alice logo"
+            >
+
+            <span>
+                SPARKLING <b>ALICE</b>
+            </span>
+
+        </a>
+
+        <div class="links">
+
+            <a href="#services">Services</a>
+
+            <a href="#work">Our Work</a>
+
+            <a href="#reviews">Reviews</a>
+
+            <a href="#process">How It Works</a>
+
+            <a
+                class="btn primary"
+                href="#contact"
+            >
+                GET A QUOTE
+            </a>
+
+        </div>
+
+    </div>
 </nav>
 
-<header class="hero" id="home">
-<div class="wrap">
-<div class="hero-inner">
-<div class="kicker">Alice Springs • Professional Vehicle Care</div>
-<h1>From red dirt<br>to <em>remarkable.</em></h1>
-<p>Professional vehicle detailing, touchless snow foam exterior washing and interior cleaning for cars, 4WDs, work vehicles and touring setups.</p>
-<div class="actions">
-<a class="btn primary" href="#contact">REQUEST A FREE QUOTE →</a>
-<a class="btn" href="tel:0478525477">CALL 0478 525 477</a>
-</div>
-<div class="hero-points">
-<span>Touchless Exterior Washing</span>
-<span>4WD & Outback Cleaning</span>
-<span>Professional Detailing</span>
-</div>
-</div>
-</div>
+
+<header
+    class="hero"
+    id="home"
+>
+
+    <div class="wrap">
+
+        <div class="kicker">
+            Alice Springs • Professional Vehicle Care
+        </div>
+
+        <h1>
+            From red dirt<br>
+            to <em>remarkable.</em>
+        </h1>
+
+        <p>
+            Professional detailing, interior restoration and exterior care
+            for everyday cars, 4WDs, work vehicles and touring setups.
+        </p>
+
+        <div class="actions">
+
+            <a
+                class="btn primary"
+                href="#contact"
+            >
+                REQUEST A FREE QUOTE →
+            </a>
+
+            <a
+                class="btn"
+                href="tel:0478525477"
+            >
+                CALL 0478 525 477
+            </a>
+
+        </div>
+
+    </div>
+
 </header>
 
-<section class="alt" id="services">
-<div class="wrap">
-<div class="heading">
-<div class="kicker">Our Services</div>
-<h2>Serious care for every vehicle.</h2>
-<p>From everyday cars to heavily soiled off-road vehicles, Sparkling Alice offers cleaning and detailing suited to Central Australian conditions.</p>
-</div>
-<div class="cards">
 
-<article class="card">
-<img loading="lazy" src="assets/1000006500.webp" alt="Red Mustang in detailing workshop">
-<div class="card-body">
-<small>01 / DETAILING</small>
-<h3>Full Vehicle Detailing</h3>
-<p>Interior and exterior detailing with attention to presentation, cleanliness and finish.</p>
-<a href="#contact">REQUEST A QUOTE →</a>
-</div>
-</article>
+<section
+    class="intro"
+    id="services"
+>
 
-<article class="card">
-<img loading="lazy" src="assets/1000006491.webp" alt="LandCruiser covered in snow foam">
-<div class="card-body">
-<small>02 / TOUCHLESS</small>
-<h3>Touchless Snow Foam Washing</h3>
-<p>Snow foam and pressure rinsing without traditional hand washing of the paintwork.</p>
-<a href="#contact">REQUEST A QUOTE →</a>
-</div>
-</article>
+    <div class="wrap">
 
-<article class="card">
-<img loading="lazy" src="assets/1000006492.webp" alt="Cleaned vehicle interior floor">
-<div class="card-body">
-<small>03 / INTERIOR</small>
-<h3>Deep Interior Cleaning</h3>
-<p>Thorough cleaning of floors, trim and areas where dust and grime accumulate.</p>
-<a href="#contact">REQUEST A QUOTE →</a>
-</div>
-</article>
+        <div class="heading">
 
-<article class="card">
-<img loading="lazy" src="assets/1000006490.webp" alt="Clean Toyota LandCruiser">
-<div class="card-body">
-<small>04 / OFF-ROAD</small>
-<h3>4WD & Touring Vehicle Care</h3>
-<p>Cleaning for 4WDs, work utes and touring vehicles exposed to outback conditions.</p>
-<a href="#contact">REQUEST A QUOTE →</a>
-</div>
-</article>
+            <div class="kicker">
+                What we do
+            </div>
 
-<article class="card">
-<img loading="lazy" src="assets/1000006498.webp" alt="Off-road camper being cleaned">
-<div class="card-body">
-<small>05 / CAMPERS</small>
-<h3>Camper & Trailer Cleaning</h3>
-<p>Exterior cleaning for off-road campers, trailers and touring setups.</p>
-<a href="#contact">REQUEST A QUOTE →</a>
-</div>
-</article>
+            <h2>
+                Serious care for every vehicle.
+            </h2>
 
-<article class="card">
-<img loading="lazy" src="assets/1000006502.webp" alt="Detailed Mustang interior">
-<div class="card-body">
-<small>06 / CUSTOM</small>
-<h3>Custom Detailing Packages</h3>
-<p>Discuss a cleaning or detailing package tailored to your vehicle and its condition.</p>
-<a href="#contact">REQUEST A QUOTE →</a>
-</div>
-</article>
+            <p>
+                From a premium finish to a proper clean after a dusty
+                outback adventure, explore the services available from
+                Sparkling Alice.
+            </p>
 
-</div>
-</div>
+        </div>
+
+
+        <div class="services">
+
+
+            <article class="card">
+
+                <img
+                    loading="lazy"
+                    src="assets/1000006500.jpg"
+                    alt="Red performance vehicle in the Sparkling Alice workshop"
+                >
+
+                <div class="body">
+
+                    <small>
+                        01 / DETAILING
+                    </small>
+
+                    <h3>
+                        Full Vehicle Detailing
+                    </h3>
+
+                    <p>
+                        Interior and exterior presentation, with attention
+                        to the finishing details.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="card">
+
+                <img
+                    loading="lazy"
+                    src="assets/1000006491.jpg"
+                    alt="Four-wheel drive covered in snow foam"
+                >
+
+                <div class="body">
+
+                    <small>
+                        02 / TOUCHLESS
+                    </small>
+
+                    <h3>
+                        Snow Foam Exterior Cleaning
+                    </h3>
+
+                    <p>
+                        Foam-based exterior washing that avoids traditional
+                        hand washing of the paintwork.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="card">
+
+                <img
+                    loading="lazy"
+                    src="assets/1000006492.jpg"
+                    alt="Vehicle interior after cleaning"
+                >
+
+                <div class="body">
+
+                    <small>
+                        03 / INTERIOR
+                    </small>
+
+                    <h3>
+                        Deep Interior Cleaning
+                    </h3>
+
+                    <p>
+                        Careful attention to floors, trim and hard-to-reach
+                        areas that collect dust and grime.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="card">
+
+                <img
+                    loading="lazy"
+                    src="assets/1000006490.jpg"
+                    alt="Clean four-wheel drive"
+                >
+
+                <div class="body">
+
+                    <small>
+                        04 / OFF-ROAD
+                    </small>
+
+                    <h3>
+                        4WD & Touring Vehicle Care
+                    </h3>
+
+                    <p>
+                        Cleaning suited to vehicles returning from
+                        demanding outback trips.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="card">
+
+                <img
+                    loading="lazy"
+                    src="assets/1000006498.jpg"
+                    alt="Off-road camper being cleaned"
+                >
+
+                <div class="body">
+
+                    <small>
+                        05 / LARGE VEHICLES
+                    </small>
+
+                    <h3>
+                        Camper & Trailer Cleaning
+                    </h3>
+
+                    <p>
+                        Exterior cleaning for off-road campers and touring
+                        equipment.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="card">
+
+                <img
+                    loading="lazy"
+                    src="assets/1000006502.jpg"
+                    alt="Detailed vehicle interior"
+                >
+
+                <div class="body">
+
+                    <small>
+                        06 / CUSTOM
+                    </small>
+
+                    <h3>
+                        Custom Detailing Packages
+                    </h3>
+
+                    <p>
+                        Talk to the team about the right approach for your
+                        vehicle and its condition.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
 </section>
 
-<section id="touchless">
-<div class="wrap split">
-<img loading="lazy" src="assets/1000006491.webp" alt="Snow foam covering a LandCruiser">
-<div>
-<div class="kicker">Our Touchless Approach</div>
-<h2>Snow foam.<br>No traditional hand wash.</h2>
-<p>Our touchless exterior washing process uses snow foam to help loosen dirt and grime before pressure rinsing.</p>
-<p>By avoiding traditional hand washing of the paintwork, this process reduces physical contact with the vehicle's exterior.</p>
-<p>It's a practical option for everyday vehicles, 4WDs and touring setups. Additional detailing treatments can be discussed separately.</p>
-<ul class="ticks">
-<li>Touchless snow foam exterior washing</li>
-<li>No traditional hand washing of paintwork</li>
-<li>Pressure rinsing to remove loosened grime</li>
-<li>Suitable for a range of vehicle types</li>
-</ul>
-<a class="btn primary" href="#contact">ENQUIRE ABOUT TOUCHLESS WASHING →</a>
-</div>
-</div>
+
+<section>
+
+    <div class="wrap split">
+
+        <img
+            loading="lazy"
+            src="assets/1000006491.jpg"
+            alt="Snow foam treatment on a four-wheel drive"
+        >
+
+        <div class="copy">
+
+            <div class="kicker">
+                Why Sparkling Alice
+            </div>
+
+            <div class="heading">
+
+                <h2>
+                    Built for the red dirt.
+                    Finished with care.
+                </h2>
+
+                <p>
+                    Alice Springs vehicles face dust, mud and long drives.
+                    Sparkling Alice combines a practical cleaning approach
+                    with the care you expect from a professional detailer.
+                </p>
+
+            </div>
+
+            <ul class="ticks">
+
+                <li>
+                    Touchless snow foam exterior washing
+                </li>
+
+                <li>
+                    Cars, 4WDs, work utes and touring setups
+                </li>
+
+                <li>
+                    Detailed interior and exterior attention
+                </li>
+
+                <li>
+                    Real results from a local workshop
+                </li>
+
+            </ul>
+
+            <a
+                class="btn primary"
+                href="#work"
+            >
+                SEE OUR WORK →
+            </a>
+
+        </div>
+
+    </div>
+
 </section>
 
-<section class="alt" id="work">
-<div class="wrap">
-<div class="heading">
-<div class="kicker">Our Work</div>
-<h2>Real vehicles. Real results.</h2>
-<p>A look at vehicle cleaning and detailing work from Sparkling Alice.</p>
-</div>
-<div class="gallery">
-<div class="photo wide"><img loading="lazy" src="assets/1000006500.webp" alt="Red Mustang in workshop"><strong>PREMIUM DETAILING</strong></div>
-<div class="photo"><img loading="lazy" src="assets/1000006490.webp" alt="Clean LandCruiser"><strong>4WD CARE</strong></div>
-<div class="photo"><img loading="lazy" src="assets/1000006491.webp" alt="Snow foam wash"><strong>TOUCHLESS SNOW FOAM</strong></div>
-<div class="photo"><img loading="lazy" src="assets/1000006498.webp" alt="Off-road camper"><strong>CAMPER CLEANING</strong></div>
-<div class="photo"><img loading="lazy" src="assets/1000006502.webp" alt="Clean vehicle seats"><strong>INTERIOR DETAILING</strong></div>
-<div class="photo"><img loading="lazy" src="assets/1000006497.webp" alt="Work ute in workshop"><strong>WORK VEHICLES</strong></div>
-<div class="photo"><img loading="lazy" src="assets/1000006494.webp" alt="Family vehicle in workshop"><strong>EVERYDAY VEHICLES</strong></div>
-</div>
-</div>
+
+<section
+    class="showcase"
+    id="work"
+>
+
+    <div class="wrap">
+
+        <div class="heading">
+
+            <div class="kicker">
+                Real vehicles • Real work
+            </div>
+
+            <h2>
+                See the difference.
+            </h2>
+
+            <p>
+                A selection of vehicles cleaned and detailed by
+                Sparkling Alice.
+            </p>
+
+        </div>
+
+
+        <div class="gallery">
+
+
+            <div class="photo wide">
+
+                <img
+                    loading="lazy"
+                    src="assets/1000006500.jpg"
+                    alt="Red vehicle detailed in workshop"
+                >
+
+                <strong>
+                    PREMIUM DETAILING
+                </strong>
+
+            </div>
+
+
+            <div class="photo">
+
+                <img
+                    loading="lazy"
+                    src="assets/1000006490.jpg"
+                    alt="Clean four-wheel drive"
+                >
+
+                <strong>
+                    4WD DETAILING
+                </strong>
+
+            </div>
+
+
+            <div class="photo">
+
+                <img
+                    loading="lazy"
+                    src="assets/1000006491.jpg"
+                    alt="Four-wheel drive covered in snow foam"
+                >
+
+                <strong>
+                    TOUCHLESS SNOW FOAM
+                </strong>
+
+            </div>
+
+
+            <div class="photo">
+
+                <img
+                    loading="lazy"
+                    src="assets/1000006498.jpg"
+                    alt="Off-road camper cleaning"
+                >
+
+                <strong>
+                    OFF-ROAD CAMPERS
+                </strong>
+
+            </div>
+
+
+            <div class="photo">
+
+                <img
+                    loading="lazy"
+                    src="assets/1000006502.jpg"
+                    alt="Detailed vehicle interior"
+                >
+
+                <strong>
+                    INTERIOR FINISH
+                </strong>
+
+            </div>
+
+
+            <div class="photo">
+
+                <img
+                    loading="lazy"
+                    src="assets/1000006497.jpg"
+                    alt="Work vehicle at Sparkling Alice"
+                >
+
+                <strong>
+                    WORK VEHICLES
+                </strong>
+
+            </div>
+
+
+            <div class="photo">
+
+                <img
+                    loading="lazy"
+                    src="assets/1000006494.jpg"
+                    alt="Family vehicle at Sparkling Alice"
+                >
+
+                <strong>
+                    FAMILY VEHICLES
+                </strong>
+
+            </div>
+
+
+        </div>
+
+
+        <div
+            class="heading"
+            style="margin-top:60px"
+        >
+
+            <div class="kicker">
+                Interior transformation
+            </div>
+
+            <h2>
+                It's what's underneath that counts.
+            </h2>
+
+            <p>
+                From a debris-filled floor to a thoroughly cleaned
+                interior surface.
+            </p>
+
+        </div>
+
+
+        <div class="compare">
+
+            <figure>
+
+                <img
+                    loading="lazy"
+                    src="assets/1000006493.jpg"
+                    alt="Vehicle interior before cleaning"
+                >
+
+                <figcaption>
+                    BEFORE
+                </figcaption>
+
+            </figure>
+
+
+            <figure>
+
+                <img
+                    loading="lazy"
+                                      src="assets/1000006492.jpg"
+                    alt="Vehicle interior after cleaning"
+                >
+
+                <figcaption>
+                    AFTER
+                </figcaption>
+
+            </figure>
+
+        </div>
+
+
+        <div
+            class="heading"
+            style="margin-top:60px"
+        >
+
+            <div class="kicker">
+                Outback conditions
+            </div>
+
+            <h2>
+                Ready for the tough jobs.
+            </h2>
+
+            <p>
+                Vehicle care designed around the dirt, dust and
+                conditions of Central Australia.
+            </p>
+
+        </div>
+
+
+        <div class="compare">
+
+            <figure>
+
+                <img
+                    loading="lazy"
+                    src="assets/1000006495.jpg"
+                    alt="Mud-covered work vehicle and camper"
+                >
+
+                <figcaption>
+                    OUTBACK DIRT
+                </figcaption>
+
+            </figure>
+
+
+            <figure>
+
+                <img
+                    loading="lazy"
+                    src="assets/1000006497.jpg"
+                    alt="Work vehicle in detailing workshop"
+                >
+
+                <figcaption>
+                    WORKSHOP CARE
+                </figcaption>
+
+            </figure>
+
+        </div>
+
+    </div>
+
 </section>
 
-<section id="results">
-<div class="wrap">
-<div class="heading">
-<div class="kicker">Interior Cleaning</div>
-<h2>Attention to the details.</h2>
-<p>Examples of heavily soiled interiors and cleaned surfaces.</p>
-</div>
-<div class="compare">
-<figure>
-<img loading="lazy" src="assets/1000006493.webp" alt="Dirty vehicle floor">
-<figcaption>BEFORE CLEANING</figcaption>
-</figure>
-<figure>
-<img loading="lazy" src="assets/1000006492.webp" alt="Clean vehicle floor">
-<figcaption>CLEANING RESULT</figcaption>
-</figure>
-</div>
-<p class="note">These images are cleaning examples. Confirm that they show the same vehicle before presenting them as a matched before-and-after result.</p>
 
-<div class="heading" style="margin-top:65px">
-<div class="kicker">Outback Conditions</div>
-<h2>Made for the tough jobs.</h2>
-<p>From muddy work vehicles to vehicles ready for the workshop.</p>
-</div>
-<div class="compare">
-<figure>
-<img loading="lazy" src="assets/1000006495.webp" alt="Muddy work ute and camper">
-<figcaption>OUTBACK CONDITIONS</figcaption>
-</figure>
-<figure>
-<img loading="lazy" src="assets/1000006497.webp" alt="Work ute at workshop">
-<figcaption>WORKSHOP CARE</figcaption>
-</figure>
-</div>
-<p class="note">Separate examples of outback dirt and workshop care; not presented as a verified matched pair.</p>
-</div>
+<section
+    class="reviews"
+    id="reviews"
+>
+
+    <div class="wrap">
+
+        <div class="heading">
+
+            <div class="kicker">
+                Customer feedback
+            </div>
+
+            <h2>
+                What customers are saying.
+            </h2>
+
+            <p>
+                Feedback from Sparkling Alice customers.
+            </p>
+
+        </div>
+
+
+        <div class="reviewgrid">
+
+
+            <div class="review">
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    “They were very accommodating on time and the work
+                    was fantastic. They got food stains removed from our
+                    canvas seat covers…”
+                </p>
+
+                <cite>
+                    — Rick Howard
+                </cite>
+
+            </div>
+
+
+            <div class="review">
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    “The team did an incredible job; the car now looks
+                    brand new. Highly recommend this business to anyone
+                    looking for detailing services.”
+                </p>
+
+                <cite>
+                    — Antonio Favale
+                </cite>
+
+            </div>
+
+
+            <div class="review">
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    “When I picked it up the next day it looked brand
+                    new. These guys are amazing.”
+                </p>
+
+                <cite>
+                    — Darrin Kean
+                </cite>
+
+            </div>
+
+
+        </div>
+
+
+        <div style="margin-top:30px">
+
+            <a
+                class="btn primary"
+                href="https://share.google/MbUvObyw9UhQbVkDP"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                VIEW ON GOOGLE →
+            </a>
+
+        </div>
+
+    </div>
+
 </section>
 
-<section class="alt" id="reviews">
-<div class="wrap">
-<div class="heading">
-<div class="kicker">Customer Feedback</div>
-<h2>Trusted by local customers.</h2>
-<p>Customer feedback shared about Sparkling Alice.</p>
-</div>
-<div class="reviewgrid">
-<article class="review">
-<div class="stars">★★★★★</div>
-<h3>Fantastic Service</h3>
-<p>“We had a PYEC work car cleaned. They were very accommodating on time and the work was fantastic. They got food stains removed from our canvas seat covers thought were going to be there forever! We will def use again.”</p>
-<cite>— Rick Howard</cite>
-</article>
-<article class="review">
-<div class="stars">★★★★★</div>
-<h3>Looks Brand New</h3>
-<p>“I used this company for high-quality car detailing on the company car that was provided to me. When received the car, it was in very poor condition and extremely dirty due to frequent out-of-town trips. The team did an incredible job; the car now looks brand new. Highly recommend this business to anyone looking for detailing services. They are very professional, timely, and their prices are competitive. Excellent job!”</p>
-<cite>— Antonio Favale</cite>
-</article>
-<article class="review">
-<div class="stars">★★★★★</div>
-<h3>Amazing Results</h3>
-<p>“I took my 15 year old Amarok to the team at Sparkling Alice for a detail inside and out. When picked it up the next day it looked brand new. These guys are amazing. I'm taking my son's car there.”</p>
-<cite>— Darrin Kean</cite>
-</article>
-</div>
-<p style="margin-top:32px">
-<a class="btn primary" href="https://share.google/MbUvObyw9UhQbVkDP" target="_blank" rel="noopener noreferrer">VIEW GOOGLE REVIEWS →</a>
-</p>
-</div>
-</section>
 
 <section id="process">
-<div class="wrap">
-<div class="heading">
-<div class="kicker">How It Works</div>
-<h2>From dirty to stunning.</h2>
-</div>
-<div class="steps">
-<article class="step">
-<div class="number">01</div>
-<h3>Tell Us About Your Vehicle</h3>
-<p>Share your vehicle type, its condition and what you need cleaned.</p>
-</article>
-<article class="step">
-<div class="number">02</div>
-<h3>Receive Your Quote</h3>
-<p>Our team can recommend a suitable service and provide a personalised quote.</p>
-</article>
-<article class="step">
-<div class="number">03</div>
-<h3>Enjoy The Result</h3>
-<p>Have your vehicle professionally cleaned and enjoy the finished presentation.</p>
-</article>
-</div>
-</div>
+
+    <div class="wrap">
+
+        <div class="heading">
+
+            <div class="kicker">
+                How it works
+            </div>
+
+            <h2>
+                Simple from start to finish.
+            </h2>
+
+        </div>
+
+
+        <div class="steps">
+
+
+            <div class="step">
+
+                <div class="number">
+                    01
+                </div>
+
+                <h3>
+                    Tell us about your vehicle
+                </h3>
+
+                <p>
+                    Share the vehicle type, condition and what you'd
+                    like cleaned.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="number">
+                    02
+                </div>
+
+                <h3>
+                    Choose the right service
+                </h3>
+
+                <p>
+                    The team can discuss a suitable approach and provide
+                    a personalised quote.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="number">
+                    03
+                </div>
+
+                <h3>
+                    Enjoy the result
+                </h3>
+
+                <p>
+                    Get your vehicle looking fresh and ready for the
+                    next trip.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
 </section>
+
 
 <section class="banner">
-<div class="wrap">
-<div class="kicker">Sparkling Alice</div>
-<h2>Ready to wash away<br>the red dirt?</h2>
-<p>From touchless exterior washing to comprehensive detailing, get in touch with our team today.</p>
-<a class="btn primary" href="#contact">REQUEST YOUR FREE QUOTE →</a>
-</div>
+
+    <div class="wrap">
+
+        <div class="kicker">
+            Sparkling Alice
+        </div>
+
+        <h2>
+            Give your vehicle<br>
+            the care it deserves.
+        </h2>
+
+        <p>
+            From daily drivers to outback tourers.
+        </p>
+
+        <a
+            class="btn primary"
+            href="#contact"
+        >
+            GET A FREE QUOTE →
+        </a>
+
+    </div>
+
 </section>
 
-<section class="alt" id="contact">
-<div class="wrap contactgrid">
-<div>
-<div class="kicker">Get In Touch</div>
-<div class="heading">
-<h2>Let's get your vehicle sparkling.</h2>
-<p>Need a touchless wash, interior detail or complete vehicle clean? Tell us what you're after and we'll get back to you with a personalised quote.</p>
-</div>
-<div class="details">
-<div><small>Call Us</small><a href="tel:0478525477">0478 525 477</a></div>
-<div><small>Email Us</small><a href="mailto:info@sparklingalice.com.au">info@sparklingalice.com.au</a></div>
-<div><small>Location</small>Alice Springs, Northern Territory</div>
-<div><small>Speciality</small>Touchless Snow Foam Washing & Vehicle Detailing</div>
-</div>
-</div>
 
-<form class="form" action="https://formsubmit.co/info@sparklingalice.com.au" method="POST">
-<input type="hidden" name="_subject" value="New Sparkling Alice Website Quote">
-<input type="hidden" name="_template" value="table">
-<input type="hidden" name="_captcha" value="true">
-<input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
-
-<h3>Request Your Free Quote</h3>
-<p>Complete the form and our team will be in touch.</p>
-
-<div class="fields">
-<div class="field">
-<label for="name">Full Name *</label>
-<input id="name" type="text" name="Name" autocomplete="name" required>
-</div>
-<div class="field">
-<label for="phone">Phone Number *</label>
-<input id="phone" type="tel" name="Phone" autocomplete="tel" required>
-</div>
-<div class="field full">
-<label for="email">Email Address *</label>
-<input id="email" type="email" name="email" autocomplete="email" required>
-</div>
-<div class="field">
-<label for="vehicle">Vehicle Type *</label>
-<select id="vehicle" name="Vehicle Type" required>
-<option value="">Select vehicle</option>
-<option>Car / Sedan</option>
-<option>SUV</option>
-<option>4WD</option>
-<option>Work Ute</option>
-<option>Camper / Trailer</option>
-<option>Other</option>
-</select>
-</div>
-<div class="field">
-<label for="service">Service Required *</label>
-<select id="service" name="Service Required" required>
-<option value="">Select service</option>
-<option>Touchless Snow Foam Wash</option>
-<option>Full Vehicle Detail</option>
-<option>Interior Deep Cleaning</option>
-<option>Exterior Detailing</option>
-<option>4WD / Outback Cleaning</option>
-<option>Camper / Trailer Cleaning</option>
-<option>Custom Package</option>
-<option>Not Sure</option>
-</select>
-</div>
-<div class="field full">
-<label for="condition">Vehicle Condition</label>
-<select id="condition" name="Vehicle Condition">
-<option value="">Select condition</option>
-<option>Light Dirt / Dust</option>
-<option>Moderately Dirty
-  </option>
-<option>Heavy Red Dirt / Mud</option>
-<option>Heavy Interior Soiling</option>
-<option>Other</option>
-</select>
-</div>
-
-<div class="field full">
-<label for="message">Additional Details</label>
-<textarea
-  id="message"
-  name="Additional Details"
-  placeholder="Tell us about your vehicle and what needs cleaning..."
-></textarea>
-</div>
-
-<div class="field full">
-<label>
-<input
-  type="checkbox"
-  name="Contact Consent"
-  value="Yes"
-  required
-  style="width:auto;margin-right:8px"
+<section
+    class="contact"
+    id="contact"
 >
-I agree to be contacted about my quote request.
-</label>
-</div>
 
-</div>
+    <div class="wrap contactgrid">
 
-<button type="submit" class="btn primary">
-SEND MY QUOTE REQUEST →
-</button>
 
-<p class="note">
-No obligation. We'll review your enquiry and contact you directly.
-</p>
+        <div>
 
-</form>
-</div>
+            <div class="kicker">
+                Get in touch
+            </div>
+
+            <div class="heading">
+
+                <h2>
+                    Let's talk about your vehicle.
+                </h2>
+
+                <p>
+                    Tell the Sparkling Alice team what you need and
+                    request a personalised quote.
+                </p>
+
+            </div>
+
+
+            <div class="details">
+
+                <div>
+
+                    <small>
+                        Phone
+                    </small>
+
+                    <a href="tel:0478525477">
+                        0478 525 477
+                    </a>
+
+                </div>
+
+
+                <div>
+
+                    <small>
+                        Email
+                    </small>
+
+                    <a href="mailto:info@sparklingalice.com.au">
+                        info@sparklingalice.com.au
+                    </a>
+
+                </div>
+
+
+                <div>
+
+                    <small>
+                        Location
+                    </small>
+
+                    Alice Springs, Northern Territory
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="form">
+
+            <form
+                action="https://formsubmit.co/info@sparklingalice.com.au"
+                method="POST"
+            >
+
+                <input
+                    type="hidden"
+                    name="_subject"
+                    value="New Sparkling Alice Website Quote"
+                >
+
+                <input
+                    type="hidden"
+                    name="_template"
+                    value="table"
+                >
+
+                <input
+                    type="hidden"
+                    name="_captcha"
+                    value="true"
+                >
+
+
+                <div class="fields">
+
+
+                    <div class="field">
+
+                        <label for="name">
+                            Your name
+                        </label>
+
+                        <input
+                            id="name"
+                            name="Name"
+                            required
+                            autocomplete="name"
+                        >
+
+                    </div>
+
+
+                    <div class="field">
+
+                        <label for="phone">
+                            Phone number
+                        </label>
+
+                        <input
+                            id="phone"
+                            name="Phone"
+                            type="tel"
+                            required
+                            autocomplete="tel"
+                        >
+
+                    </div>
+
+
+                    <div class="field">
+
+                        <label for="email">
+                            Email address
+                        </label>
+
+                        <input
+                            id="email"
+                            name="Email"
+                            type="email"
+                            required
+                            autocomplete="email"
+                        >
+
+                    </div>
+
+
+                    <div class="field">
+
+                        <label for="vehicle">
+                            Vehicle
+                        </label>
+
+                        <input
+                            id="vehicle"
+                            name="Vehicle"
+                            placeholder="e.g. Toyota LandCruiser"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="field full">
+
+                        <label for="service">
+                            Service required
+                        </label>
+
+                        <select
+                            id="service"
+                            name="Service"
+                            required
+                        >
+
+                            <option value="">
+                                Choose a service
+                            </option>
+
+                            <option>
+                                Full vehicle detailing
+                            </option>
+
+                            <option>
+                                Touchless snow foam wash
+                            </option>
+
+                            <option>
+                                Interior deep cleaning
+                            </option>
+
+                            <option>
+                                4WD or work vehicle
+                            </option>
+
+                            <option>
+                                Camper or trailer cleaning
+                            </option>
+
+                            <option>
+                                Custom package
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="field full">
+
+                        <label for="message">
+                            Tell us what you need
+                        </label>
+
+                        <textarea
+                            id="message"
+                            name="Message"
+                            placeholder="Vehicle condition, preferred timing and any questions..."
+                        ></textarea>
+
+                    </div>
+
+
+                </div>
+
+
+                <button
+                    class="btn primary"
+                    type="submit"
+                >
+                    REQUEST A FREE QUOTE →
+                </button>
+
+                <p class="note">
+                    Send your details and the Sparkling Alice team can
+                    contact you about your quote.
+                </p>
+
+            </form>
+
+        </div>
+
+
+    </div>
+
 </section>
+
 
 <footer>
-<div class="wrap foot">
-<span>
-© <span id="year"></span> Sparkling Alice.
-All rights reserved.
-</span>
-<span>
-Professional Vehicle Detailing · Alice Springs, NT
-</span>
-</div>
+
+    <div class="wrap foot">
+
+        <span>
+            © 2026 Sparkling Alice. All rights reserved.
+        </span>
+
+        <span>
+            Vehicle detailing • Alice Springs, NT
+        </span>
+
+    </div>
+
 </footer>
 
-<a class="mobile-cta" href="#contact">
-REQUEST A FREE QUOTE →
+
+<a
+    class="mobilecall"
+    href="tel:0478525477"
+>
+    CALL SPARKLING ALICE — 0478 525 477
 </a>
 
-<script>
-document.getElementById("year").textContent =
-  new Date().getFullYear();
-
-const menuBtn = document.getElementById("menuBtn");
-const navLinks = document.getElementById("navLinks");
-
-menuBtn.addEventListener("click", () => {
-  const isOpen = navLinks.classList.toggle("open");
-
-  menuBtn.setAttribute(
-    "aria-expanded",
-    String(isOpen)
-  );
-
-  menuBtn.textContent = isOpen ? "✕" : "☰";
-});
-
-navLinks.querySelectorAll("a").forEach(link => {
-  link.addEventListener("click", () => {
-    navLinks.classList.remove("open");
-
-    menuBtn.setAttribute(
-      "aria-expanded",
-      "false"
-    );
-
-    menuBtn.textContent = "☰";
-  });
-});
-</script>
 
 </body>
 </html>
+             
