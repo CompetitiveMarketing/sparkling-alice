@@ -5,11 +5,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#07090c">
-<meta name="description" content="Sparkling Alice premium vehicle detailing and touchless vehicle care in Alice Springs.">
+<meta name="description" content="Sparkling Alice premium vehicle detailing, touchless snow foam washing, fleet vehicle detailing, 4WD and camper cleaning in Alice Springs.">
 <title>Sparkling Alice | Premium Vehicle Care</title>
 
 <style>
-:root {
+:root{
   --bg:#07090c;
   --panel:#101318;
   --panel2:#15191f;
@@ -19,57 +19,24 @@
   --muted:#b9bec6;
   --line:#2d3239;
 }
-
-* {
-  box-sizing:border-box;
-}
-
-html {
-  scroll-behavior:smooth;
-  scroll-padding-top:82px;
-}
-
-body {
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:82px}
+body{
   margin:0;
   background:var(--bg);
   color:var(--text);
   font:16px/1.65 Arial,Helvetica,sans-serif;
 }
-
-a {
-  color:inherit;
-  text-decoration:none;
-}
-
-img {
-  display:block;
-  width:100%;
-}
-
-button,input,select,textarea {
-  font:inherit;
-}
-
-.container {
-  width:min(1160px,92%);
-  margin:auto;
-}
-
-section {
-  padding:90px 0;
-}
-
-h1,h2,h3,p {
-  margin-top:0;
-}
-
-h1,h2,h3 {
-  line-height:1.08;
-}
+a{color:inherit;text-decoration:none}
+img{display:block;width:100%}
+button,input,select,textarea{font:inherit}
+.container{width:min(1160px,92%);margin:auto}
+section{padding:90px 0}
+h1,h2,h3,p{margin-top:0}
+h1,h2,h3{line-height:1.08}
 
 /* NAVIGATION */
-
-.navbar {
+.navbar{
   position:sticky;
   top:0;
   z-index:100;
@@ -77,16 +44,14 @@ h1,h2,h3 {
   border-bottom:1px solid var(--line);
   backdrop-filter:blur(14px);
 }
-
-.nav-inner {
+.nav-inner{
   min-height:80px;
   display:flex;
   align-items:center;
   justify-content:space-between;
   gap:24px;
 }
-
-.logo {
+.logo{
   display:flex;
   align-items:center;
   gap:13px;
@@ -94,30 +59,21 @@ h1,h2,h3 {
   letter-spacing:3px;
   font-size:18px;
 }
-
-.logo img {
+.logo img{
   width:58px;
   height:42px;
   object-fit:contain;
 }
-
-.logo span span {
-  color:var(--gold);
-}
-
-.nav-links {
+.logo span span{color:var(--gold)}
+.nav-links{
   display:flex;
   align-items:center;
   gap:23px;
   font-size:13px;
   font-weight:800;
 }
-
-.nav-links a:hover {
-  color:var(--gold);
-}
-
-.menu-btn {
+.nav-links a:hover{color:var(--gold)}
+.menu-btn{
   display:none;
   background:transparent;
   border:1px solid var(--line);
@@ -126,8 +82,7 @@ h1,h2,h3 {
   padding:5px 12px;
   font-size:23px;
 }
-
-.btn {
+.btn{
   display:inline-flex;
   align-items:center;
   justify-content:center;
@@ -141,53 +96,37 @@ h1,h2,h3 {
   transition:.2s;
   cursor:pointer;
 }
-
-.btn:hover {
-  transform:translateY(-2px);
-}
-
-.btn.primary {
+.btn:hover{transform:translateY(-2px)}
+.btn.primary{
   background:var(--gold);
   border-color:var(--gold);
   color:#0a0b0d;
 }
 
 /* HERO */
-
-.hero {
+.hero{
   min-height:760px;
   display:flex;
   align-items:center;
   position:relative;
   background:
-    linear-gradient(
-      90deg,
-      #07090cf8 3%,
-      #07090ccf 44%,
-      #07090c55
-    ),
+    linear-gradient(90deg,#07090cf8 3%,#07090ccf 44%,#07090c55),
     url("assets/1000006500.webp") center/cover;
 }
-
-.hero:after {
+.hero:after{
   content:"";
   position:absolute;
   inset:0;
-  background:linear-gradient(
-    0deg,
-    #07090c 0%,
-    transparent 26%
-  );
+  background:linear-gradient(0deg,#07090c,transparent 26%);
+  pointer-events:none;
 }
-
-.hero-content {
+.hero-content{
   position:relative;
   z-index:1;
   max-width:760px;
   padding:80px 0;
 }
-
-.badge {
+.badge{
   display:inline-block;
   border:1px solid #e0b93670;
   color:var(--cream);
@@ -198,167 +137,151 @@ h1,h2,h3 {
   letter-spacing:2px;
   text-transform:uppercase;
 }
-
-.hero h1 {
+.hero h1{
   font-size:clamp(54px,8vw,94px);
   letter-spacing:-4px;
   margin:28px 0 24px;
 }
-
-.hero h1 span {
-  color:var(--cream);
-}
-
-.hero p {
+.hero h1 span{color:var(--cream)}
+.hero p{
   max-width:650px;
   color:#c9cdd3;
   font-size:20px;
 }
-
-.buttons {
+.buttons{
   display:flex;
   gap:14px;
   flex-wrap:wrap;
   margin-top:34px;
 }
 
-/* SHARED SECTIONS */
-
-.section-label {
+/* SHARED */
+.section-label{
   color:var(--gold);
   font-size:12px;
   font-weight:900;
   letter-spacing:2.5px;
   text-transform:uppercase;
 }
-
-.section-head {
+.section-head{
   max-width:760px;
   margin-bottom:38px;
 }
-
-.section-head h2 {
+.section-head h2{
   font-size:clamp(36px,5vw,60px);
   letter-spacing:-2px;
   margin:12px 0 15px;
 }
-
 .section-head p,
 .service p,
 .why-copy p,
 .step p,
-.contact-copy p {
+.contact-copy p{
   color:var(--muted);
 }
 
 /* SERVICES */
-
-.services {
-  background:#0d1014;
-}
-
-.service-grid {
+.services{background:#0d1014}
+.service-grid{
   display:grid;
   grid-template-columns:repeat(3,1fr);
   gap:18px;
 }
-
-.service {
+.service{
   background:var(--panel2);
   border:1px solid var(--line);
   border-radius:14px;
   overflow:hidden;
 }
-
-.service img {
+.service img{
   height:230px;
   object-fit:cover;
 }
-
-.service-body {
-  padding:25px;
-}
-
-.service small {
+.service-body{padding:25px}
+.service small{
   color:var(--gold);
   font-weight:900;
   letter-spacing:1.5px;
 }
-
-.service h3 {
+.service h3{
   font-size:21px;
   margin:12px 0;
 }
+.service-featured{
+  grid-column:1/-1;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  align-items:stretch;
+}
+.service-featured img{
+  height:100%;
+  min-height:300px;
+  object-fit:cover;
+}
+.service-featured .service-body{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  padding:40px;
+}
+.service-featured h3{
+  font-size:clamp(25px,3vw,37px);
+}
+.service-featured .btn{
+  align-self:flex-start;
+  margin-top:12px;
+}
 
-/* WHY SPARKLING ALICE */
-
-.why-grid {
+/* WHY */
+.why-grid{
   display:grid;
   grid-template-columns:1fr 1fr;
   gap:65px;
   align-items:center;
 }
-
-.why-grid > img {
+.why-grid>img{
   height:570px;
   object-fit:cover;
   border-radius:15px;
 }
-
-.features {
+.features{
   display:grid;
-  gap:0;
   margin:25px 0 32px;
 }
-
-.feature {
+.feature{
   padding:14px 0;
   border-bottom:1px solid var(--line);
   font-size:14px;
   font-weight:800;
 }
-
-.feature:before {
+.feature:before{
   content:"✓";
   color:var(--gold);
   margin-right:12px;
 }
 
-/* OUR WORK */
-
-.showcase {
-  background:#0d1014;
-}
-
-.gallery {
+/* GALLERY */
+.showcase{background:#0d1014}
+.gallery{
   display:grid;
   grid-template-columns:repeat(3,1fr);
   grid-auto-rows:245px;
   gap:13px;
 }
-
-.gallery-item {
+.gallery-item{
   position:relative;
   overflow:hidden;
   border-radius:12px;
   background:#171a1f;
 }
-
-.gallery-item.wide {
-  grid-column:span 2;
-}
-
-.gallery-item img {
+.gallery-item.wide{grid-column:span 2}
+.gallery-item img{
   height:100%;
   object-fit:cover;
-  transition:.4s;
+  transition:transform .4s;
 }
-
-.gallery-item:hover img {
-  transform:scale(1.04);
-}
-
-.gallery-item strong {
+.gallery-item:hover img{transform:scale(1.04)}
+.gallery-item strong{
   position:absolute;
   left:14px;
   bottom:14px;
@@ -369,26 +292,22 @@ h1,h2,h3 {
   font-size:11px;
   letter-spacing:.7px;
 }
-
-.compare {
+.compare{
   display:grid;
   grid-template-columns:1fr 1fr;
   gap:18px;
   margin-top:25px;
 }
-
-.compare figure {
+.compare figure{
   position:relative;
   margin:0;
 }
-
-.compare img {
+.compare img{
   height:390px;
   object-fit:cover;
   border-radius:12px;
 }
-
-.compare figcaption {
+.compare figcaption{
   position:absolute;
   top:14px;
   left:14px;
@@ -401,44 +320,32 @@ h1,h2,h3 {
 }
 
 /* REVIEWS */
-
-.reviews {
-  background:#07090c;
-}
-
-.review-grid,
-.process-grid {
+.reviews{background:#07090c}
+.review-grid,.process-grid{
   display:grid;
   grid-template-columns:repeat(3,1fr);
   gap:18px;
 }
-
-.review,
-.step {
+.review,.step{
   background:var(--panel2);
   border:1px solid var(--line);
   border-radius:14px;
   padding:27px;
 }
-
-.stars,
-.step-number {
+.stars,.step-number{
   color:var(--gold);
   font-weight:900;
 }
-
-.stars {
+.stars{
   font-size:20px;
   letter-spacing:2px;
 }
-
-.review p {
+.review p{
   color:#c6cad0;
   font-size:14px;
   margin-top:15px;
 }
-
-.review cite {
+.review cite{
   font-style:normal;
   color:var(--cream);
   font-size:13px;
@@ -446,67 +353,52 @@ h1,h2,h3 {
 }
 
 /* PROCESS */
-
-.step-number {
+.step-number{
   font-size:45px;
   opacity:.65;
 }
-
-.step h3 {
+.step h3{
   font-size:20px;
   margin:12px 0;
 }
 
-/* CALL TO ACTION */
-
-.cta {
+/* CTA */
+.cta{
   text-align:center;
   background:
-    linear-gradient(
-      #07090cc7,
-      #07090cf0
-    ),
+    linear-gradient(#07090cc7,#07090cf0),
     url("assets/1000006500.webp") center/cover;
 }
-
-.cta h2 {
+.cta h2{
   font-size:clamp(38px,6vw,70px);
   letter-spacing:-2px;
   margin:15px 0;
 }
-
-.cta p {
+.cta p{
   color:#d4d7db;
   max-width:640px;
   margin:0 auto 28px;
 }
 
 /* CONTACT */
-
-.contact {
-  background:#0d1014;
-}
-
-.contact-grid {
+.contact{background:#0d1014}
+.contact-grid{
   display:grid;
   grid-template-columns:.9fr 1.1fr;
   gap:48px;
 }
-
-.contact-details {
+.contact-details{
   display:grid;
   gap:12px;
   margin-top:28px;
 }
-
-.contact-details div {
+.contact-details div{
   background:var(--panel2);
   border:1px solid var(--line);
   padding:16px;
   border-radius:9px;
 }
-
-.contact-details small {
+.contact-details small{
   display:block;
   color:var(--gold);
   font-size:11px;
@@ -514,38 +406,28 @@ h1,h2,h3 {
   letter-spacing:1.4px;
   text-transform:uppercase;
 }
-
-.form {
+.form{
   background:var(--panel2);
   border:1px solid var(--line);
   border-radius:14px;
   padding:28px;
 }
-
-.form-grid {
+.form-grid{
   display:grid;
   grid-template-columns:1fr 1fr;
   gap:14px;
 }
-
-.field {
+.field{
   display:flex;
   flex-direction:column;
   gap:6px;
 }
-
-.field.full {
-  grid-column:1/-1;
-}
-
-label {
+.field.full{grid-column:1/-1}
+label{
   font-size:13px;
   font-weight:800;
 }
-
-input,
-select,
-textarea {
+input,select,textarea{
   width:100%;
   background:#080a0d;
   border:1px solid #3a3f47;
@@ -553,47 +435,37 @@ textarea {
   border-radius:7px;
   padding:13px;
 }
-
-textarea {
+textarea{
   min-height:120px;
   resize:vertical;
 }
-
-.form .btn {
+.form .btn{
   width:100%;
   margin-top:18px;
 }
-
-.form-note {
+.form-note{
   font-size:12px;
   color:var(--muted);
   margin:12px 0 0;
 }
 
 /* FOOTER */
-
-footer {
+footer{
   border-top:1px solid var(--line);
   padding:28px 0;
   color:#9ea4ab;
   font-size:13px;
 }
-
-.footer-inner {
+.footer-inner{
   display:flex;
   justify-content:space-between;
   gap:20px;
 }
-
-.mobile-cta {
-  display:none;
-}
+.mobile-cta{display:none}
 
 /* TABLET */
-
-@media(max-width:900px) {
-
-  .nav-links {
+@media(max-width:900px){
+  .nav-links{
     display:none;
     position:absolute;
     top:80px;
@@ -605,110 +477,64 @@ footer {
     align-items:stretch;
     border-bottom:1px solid var(--line);
   }
-
-  .nav-links.open {
-    display:flex;
-  }
-
-  .menu-btn {
-    display:block;
-  }
-
-  .service-grid,
-  .review-grid,
-  .process-grid {
+  .nav-links.open{display:flex}
+  .menu-btn{display:block}
+  .service-grid,.review-grid,.process-grid{
     grid-template-columns:repeat(2,1fr);
   }
-
-  .why-grid,
-  .contact-grid {
+  .service-featured{
+    grid-column:1/-1;
+    grid-template-columns:1fr 1fr;
+  }
+  .why-grid,.contact-grid{
     grid-template-columns:1fr;
   }
-
-  .why-grid > img {
-    height:440px;
-  }
+  .why-grid>img{height:440px}
 }
 
 /* MOBILE */
-
-@media(max-width:600px) {
-
-  section {
-    padding:65px 0;
-  }
-
-  .logo {
+@media(max-width:600px){
+  section{padding:65px 0}
+  .logo{
     font-size:16px;
     letter-spacing:2px;
   }
-
-  .logo img {
-    display:none;
-  }
-
-  .hero {
+  .logo img{display:none}
+  .hero{
     min-height:760px;
     background:
-      linear-gradient(
-        90deg,
-        #07090cf2,
-        #07090c98
-      ),
+      linear-gradient(90deg,#07090cf2,#07090c98),
       url("assets/1000006500.webp") 58% center/cover;
   }
-
-  .hero-content {
-    padding:65px 0 120px;
-  }
-
-  .hero h1 {
+  .hero-content{padding:65px 0 120px}
+  .hero h1{
     font-size:56px;
     letter-spacing:-3px;
   }
-
-  .hero p {
-    font-size:18px;
-  }
-
-  .buttons {
-    flex-direction:column;
-  }
-
-  .buttons .btn {
-    width:100%;
-  }
-
-  .service-grid,
-  .review-grid,
-  .process-grid,
-  .gallery,
-  .compare,
-  .form-grid {
+  .hero p{font-size:18px}
+  .buttons{flex-direction:column}
+  .buttons .btn{width:100%}
+  .service-grid,.review-grid,.process-grid,
+  .gallery,.compare,.form-grid{
     grid-template-columns:1fr;
   }
-
-  .gallery-item.wide {
+  .service-featured{
     grid-column:auto;
+    display:block;
   }
-
-  .gallery {
-    grid-auto-rows:270px;
+  .service-featured img{
+    height:260px;
+    min-height:0;
   }
-
-  .compare img {
-    height:310px;
+  .service-featured .service-body{
+    padding:25px;
   }
-
-  .field.full {
-    grid-column:auto;
-  }
-
-  .footer-inner {
-    flex-direction:column;
-  }
-
-  .mobile-cta {
+  .gallery-item.wide{grid-column:auto}
+  .gallery{grid-auto-rows:270px}
+  .compare img{height:310px}
+  .field.full{grid-column:auto}
+  .footer-inner{flex-direction:column}
+  .mobile-cta{
     display:block;
     position:fixed;
     bottom:12px;
@@ -723,10 +549,7 @@ footer {
     font-weight:900;
     box-shadow:0 5px 22px #000b;
   }
-
-  footer {
-    padding-bottom:90px;
-  }
+  footer{padding-bottom:90px}
 }
 </style>
 </head>
@@ -737,21 +560,14 @@ footer {
 
 <header class="navbar">
   <div class="container nav-inner">
-
     <a class="logo" href="#home">
-      <img
-        src="assets/1000006508.webp"
-        alt="Sparkling Alice logo"
-      >
+      <img src="assets/1000006508.webp" alt="Sparkling Alice logo">
       <span>SPARKLING <span>ALICE</span></span>
     </a>
 
-    <button
-      class="menu-btn"
-      id="menuBtn"
+    <button class="menu-btn" id="menuBtn"
       aria-label="Open navigation"
-      aria-expanded="false"
-    >☰</button>
+      aria-expanded="false">☰</button>
 
     <nav class="nav-links" id="navLinks">
       <a href="#services">Services</a>
@@ -759,11 +575,8 @@ footer {
       <a href="#work">Our Work</a>
       <a href="#reviews">Reviews</a>
       <a href="#process">How It Works</a>
-      <a class="btn primary" href="#contact">
-        GET A QUOTE
-      </a>
+      <a class="btn primary" href="#contact">GET A QUOTE</a>
     </nav>
-
   </div>
 </header>
 
@@ -774,10 +587,7 @@ footer {
 <section class="hero" id="home">
   <div class="container">
     <div class="hero-content">
-
-      <div class="badge">
-        Premium Vehicle Care
-      </div>
+      <div class="badge">Premium Vehicle Care</div>
 
       <h1>
         Your Car.<br>
@@ -786,20 +596,18 @@ footer {
 
       <p>
         Premium vehicle detailing and protection
-        designed to bring your car back to its best
-        and keep it looking that way.
+        for cars, 4WDs, commercial fleets and
+        touring vehicles across Alice Springs.
       </p>
 
       <div class="buttons">
         <a class="btn primary" href="#contact">
           GET A FREE QUOTE →
         </a>
-
         <a class="btn" href="tel:0478525477">
           CALL 0478 525 477
         </a>
       </div>
-
     </div>
   </div>
 </section>
@@ -814,19 +622,17 @@ footer {
       <h2>Complete care for your vehicle.</h2>
       <p>
         Professional cleaning and detailing for
-        everyday cars, 4WDs, work vehicles and
-        touring setups in Alice Springs.
+        everyday cars, 4WDs, business fleets,
+        work vehicles and touring setups in Alice Springs.
       </p>
     </div>
 
     <div class="service-grid">
 
       <article class="service">
-        <img
-          loading="lazy"
+        <img loading="lazy"
           src="assets/1000006500.webp"
-          alt="Red performance car being detailed"
-        >
+          alt="Red performance car being detailed">
         <div class="service-body">
           <small>01 / DETAILING</small>
           <h3>Full Vehicle Detailing</h3>
@@ -838,11 +644,9 @@ footer {
       </article>
 
       <article class="service">
-        <img
-          loading="lazy"
+        <img loading="lazy"
           src="assets/1000006491.webp"
-          alt="Four wheel drive covered in snow foam"
-        >
+          alt="Four wheel drive covered in snow foam">
         <div class="service-body">
           <small>02 / TOUCHLESS</small>
           <h3>Touchless Snow Foam Washing</h3>
@@ -854,11 +658,9 @@ footer {
       </article>
 
       <article class="service">
-        <img
-          loading="lazy"
+        <img loading="lazy"
           src="assets/1000006502.webp"
-          alt="Detailed black vehicle interior"
-        >
+          alt="Detailed black vehicle interior">
         <div class="service-body">
           <small>03 / INTERIOR</small>
           <h3>Deep Interior Cleaning</h3>
@@ -871,11 +673,9 @@ footer {
       </article>
 
       <article class="service">
-        <img
-          loading="lazy"
+        <img loading="lazy"
           src="assets/1000006490.webp"
-          alt="Clean off-road four wheel drive"
-        >
+          alt="Clean off-road four wheel drive">
         <div class="service-body">
           <small>04 / 4WD</small>
           <h3>4WD & Touring Vehicle Care</h3>
@@ -887,11 +687,9 @@ footer {
       </article>
 
       <article class="service">
-        <img
-          loading="lazy"
+        <img loading="lazy"
           src="assets/1000006498.webp"
-          alt="Off-road camper being washed"
-        >
+          alt="Off-road camper being washed">
         <div class="service-body">
           <small>05 / CAMPERS</small>
           <h3>Camper & Trailer Cleaning</h3>
@@ -903,18 +701,50 @@ footer {
       </article>
 
       <article class="service">
-        <img
-          loading="lazy"
-          src="assets/1000006497.webp"
-          alt="Work ute in the Sparkling Alice workshop"
-        >
+        <img loading="lazy"
+          src="assets/1000006494.webp"
+          alt="White passenger vehicle in detailing workshop">
         <div class="service-body">
-          <small>06 / WORK VEHICLES</small>
-          <h3>Work Vehicle Cleaning</h3>
+          <small>06 / CUSTOM</small>
+          <h3>Custom Detailing Packages</h3>
           <p>
-            Practical cleaning for utes and vehicles
-            that work in demanding conditions.
+            Tailored cleaning options based on
+            your vehicle's type, condition
+            and requirements.
           </p>
+        </div>
+      </article>
+
+      <!-- FEATURED FLEET SERVICE -->
+
+      <article class="service service-featured">
+        <img loading="lazy"
+          src="assets/1000006497.webp"
+          alt="Commercial work ute in the Sparkling Alice workshop">
+
+        <div class="service-body">
+          <small>07 / BUSINESS & COMMERCIAL</small>
+
+          <h3>Fleet Vehicle Detailing</h3>
+
+          <p>
+            Keep your business vehicles clean,
+            presentable and ready for work.
+            Sparkling Alice offers detailing for
+            company cars, commercial utes,
+            work vehicles and business fleets.
+          </p>
+
+          <p>
+            Whether you have a small team of
+            vehicles or a larger fleet, get in
+            touch to discuss your cleaning needs
+            and a suitable detailing arrangement.
+          </p>
+
+          <a class="btn primary" href="#contact">
+            ENQUIRE ABOUT FLEET DETAILING →
+          </a>
         </div>
       </article>
 
@@ -927,17 +757,12 @@ footer {
 <section id="why">
   <div class="container why-grid">
 
-    <img
-      loading="lazy"
+    <img loading="lazy"
       src="assets/1000006491.webp"
-      alt="Touchless snow foam wash on a four wheel drive"
-    >
+      alt="Touchless snow foam wash on a four wheel drive">
 
     <div class="why-copy">
-
-      <div class="section-label">
-        Why Sparkling Alice
-      </div>
+      <div class="section-label">Why Sparkling Alice</div>
 
       <div class="section-head">
         <h2>Built for Alice Springs conditions.</h2>
@@ -960,6 +785,9 @@ footer {
           Cars, 4WDs, work utes and touring setups
         </div>
         <div class="feature">
+          Business and fleet vehicle detailing
+        </div>
+        <div class="feature">
           Professional interior and exterior care
         </div>
       </div>
@@ -967,7 +795,6 @@ footer {
       <a class="btn primary" href="#work">
         SEE OUR WORK →
       </a>
-
     </div>
   </div>
 </section>
@@ -982,87 +809,63 @@ footer {
       <h2>Real vehicles. Real results.</h2>
       <p>
         Work from Sparkling Alice across performance
-        cars, 4WDs, interiors, work vehicles and
-        touring setups.
+        cars, 4WDs, interiors and touring setups.
       </p>
     </div>
 
     <div class="gallery">
 
       <div class="gallery-item wide">
-        <img
-          loading="lazy"
+        <img loading="lazy"
           src="assets/1000006500.webp"
-          alt="Red performance car after detailing"
-        >
+          alt="Red performance car after detailing">
         <strong>PREMIUM DETAILING</strong>
       </div>
 
       <div class="gallery-item">
-        <img
-          loading="lazy"
+        <img loading="lazy"
           src="assets/1000006490.webp"
-          alt="Clean off-road four wheel drive"
-        >
+          alt="Clean off-road four wheel drive">
         <strong>4WD CARE</strong>
       </div>
 
       <div class="gallery-item">
-        <img
-          loading="lazy"
+        <img loading="lazy"
           src="assets/1000006491.webp"
-          alt="Snow foam on four wheel drive"
-        >
+          alt="Snow foam on four wheel drive">
         <strong>TOUCHLESS SNOW FOAM</strong>
       </div>
 
       <div class="gallery-item">
-        <img
-          loading="lazy"
+        <img loading="lazy"
           src="assets/1000006498.webp"
-          alt="Camper trailer cleaning"
-        >
+          alt="Camper trailer cleaning">
         <strong>CAMPER CLEANING</strong>
       </div>
 
       <div class="gallery-item">
-        <img
-          loading="lazy"
+        <img loading="lazy"
           src="assets/1000006502.webp"
-          alt="Clean black vehicle seat"
-        >
+          alt="Clean black vehicle seat">
         <strong>INTERIOR DETAILING</strong>
       </div>
 
       <div class="gallery-item">
-        <img
-          loading="lazy"
-          src="assets/1000006497.webp"
-          alt="Work ute in workshop"
-        >
-        <strong>WORK VEHICLES</strong>
-      </div>
-
-      <div class="gallery-item">
-        <img
-          loading="lazy"
+        <img loading="lazy"
           src="assets/1000006494.webp"
-          alt="White family four wheel drive in workshop"
-        >
+          alt="White passenger vehicle in workshop">
         <strong>FAMILY VEHICLES</strong>
       </div>
 
     </div>
 
-    <!-- INTERIOR BEFORE AND AFTER -->
+    <!-- INTERIOR TRANSFORMATION -->
 
     <div class="section-head" style="margin-top:65px">
       <div class="section-label">
         Interior Transformation
       </div>
-
       <h2>Attention to the details.</h2>
-
       <p>
         A look at a heavily soiled interior surface
         and the cleaned finish.
@@ -1070,57 +873,44 @@ footer {
     </div>
 
     <div class="compare">
-
       <figure>
-        <img
-          loading="lazy"
+        <img loading="lazy"
           src="assets/1000006493.webp"
-          alt="Dirty vehicle floor before cleaning"
-        >
+          alt="Dirty vehicle floor before cleaning">
         <figcaption>BEFORE</figcaption>
       </figure>
 
       <figure>
-        <img
-          loading="lazy"
+        <img loading="lazy"
           src="assets/1000006492.webp"
-          alt="Vehicle floor after cleaning"
-        >
+          alt="Vehicle floor after cleaning">
         <figcaption>AFTER</figcaption>
       </figure>
-
     </div>
 
-    <!-- OUTBACK VEHICLES -->
+    <!-- OUTBACK CONDITIONS -->
 
     <div class="section-head" style="margin-top:65px">
       <div class="section-label">
         Outback Conditions
       </div>
-
       <h2>Ready for the tough jobs.</h2>
     </div>
 
     <div class="gallery">
-
       <div class="gallery-item wide">
-        <img
-          loading="lazy"
+        <img loading="lazy"
           src="assets/1000006495.webp"
-          alt="Muddy work ute and trailer"
-        >
+          alt="Muddy work ute and trailer">
         <strong>RED DIRT & MUD</strong>
       </div>
 
       <div class="gallery-item">
-        <img
-          loading="lazy"
+        <img loading="lazy"
           src="assets/1000006498.webp"
-          alt="Off-road trailer being cleaned"
-        >
+          alt="Off-road trailer being cleaned">
         <strong>TOURING GEAR</strong>
       </div>
-
     </div>
 
   </div>
@@ -1132,9 +922,7 @@ footer {
   <div class="container">
 
     <div class="section-head">
-      <div class="section-label">
-        Customer Feedback
-      </div>
+      <div class="section-label">Customer Feedback</div>
       <h2>What customers are saying.</h2>
     </div>
 
@@ -1142,6 +930,7 @@ footer {
 
       <article class="review">
         <div class="stars">★★★★★</div>
+        
         <p>
           “They were very accommodating on time
           and the work was fantastic. They got
@@ -1173,7 +962,6 @@ footer {
       </article>
 
     </div>
-
   </div>
 </section>
 
@@ -1183,9 +971,7 @@ footer {
   <div class="container">
 
     <div class="section-head">
-      <div class="section-label">
-        How It Works
-      </div>
+      <div class="section-label">How It Works</div>
       <h2>Simple from start to finish.</h2>
     </div>
 
@@ -1219,7 +1005,6 @@ footer {
       </div>
 
     </div>
-
   </div>
 </section>
 
@@ -1228,9 +1013,7 @@ footer {
 <section class="cta">
   <div class="container">
 
-    <div class="section-label">
-      Sparkling Alice
-    </div>
+    <div class="section-label">Sparkling Alice</div>
 
     <h2>
       Give your vehicle<br>
@@ -1238,8 +1021,9 @@ footer {
     </h2>
 
     <p>
-      From everyday cars to outback tourers,
-      get in touch with the Sparkling Alice team.
+      From everyday cars to outback tourers
+      and commercial fleets, get in touch
+      with the Sparkling Alice team.
     </p>
 
     <a class="btn primary" href="#contact">
@@ -1256,15 +1040,14 @@ footer {
 
     <div class="contact-copy">
 
-      <div class="section-label">
-        Get In Touch
-      </div>
+      <div class="section-label">Get In Touch</div>
 
       <div class="section-head">
         <h2>Let's talk about your vehicle.</h2>
         <p>
           Tell the Sparkling Alice team what
           you need and request a personalised quote.
+          Fleet and commercial enquiries are welcome.
         </p>
       </div>
 
@@ -1290,7 +1073,6 @@ footer {
         </div>
 
       </div>
-
     </div>
 
     <form class="form" onsubmit="sendQuote(event)">
@@ -1301,6 +1083,7 @@ footer {
           <label for="name">Your Name *</label>
           <input
             id="name"
+            name="name"
             required
             autocomplete="name"
           >
@@ -1310,6 +1093,7 @@ footer {
           <label for="phone">Phone Number *</label>
           <input
             id="phone"
+            name="phone"
             type="tel"
             required
             autocomplete="tel"
@@ -1320,6 +1104,7 @@ footer {
           <label for="email">Email Address *</label>
           <input
             id="email"
+            name="email"
             type="email"
             required
             autocomplete="email"
@@ -1330,6 +1115,7 @@ footer {
           <label for="vehicle">Vehicle *</label>
           <input
             id="vehicle"
+            name="vehicle"
             placeholder="e.g. Toyota LandCruiser"
             required
           >
@@ -1340,28 +1126,15 @@ footer {
             Service Required *
           </label>
 
-          <select id="service" required>
-            <option value="">
-              Choose a service
-            </option>
-            <option>
-              Full Vehicle Detailing
-            </option>
-            <option>
-              Touchless Snow Foam Wash
-            </option>
-            <option>
-              Interior Deep Cleaning
-            </option>
-            <option>
-              4WD / Work Vehicle Cleaning
-            </option>
-            <option>
-              Camper / Trailer Cleaning
-            </option>
-            <option>
-              Custom Package
-            </option>
+          <select id="service" name="service" required>
+            <option value="">Choose a service</option>
+            <option>Full Vehicle Detailing</option>
+            <option>Touchless Snow Foam Wash</option>
+            <option>Interior Deep Cleaning</option>
+            <option>4WD / Work Vehicle Cleaning</option>
+            <option>Camper / Trailer Cleaning</option>
+            <option>Custom Detailing Package</option>
+            <option>Fleet Vehicle Detailing</option>
           </select>
         </div>
 
@@ -1372,7 +1145,8 @@ footer {
 
           <textarea
             id="message"
-            placeholder="Vehicle condition, preferred timing and anything else we should know..."
+            name="message"
+            placeholder="Vehicle condition, number of fleet vehicles, preferred timing and anything else we should know..."
           ></textarea>
         </div>
 
@@ -1383,8 +1157,10 @@ footer {
       </button>
 
       <p class="form-note">
-        Submitting opens your email app with the
-        quote details ready to send to Sparkling Alice.
+        Submitting opens your email app with
+        your quote details ready to send.
+        You must press Send in your email app
+        to complete the enquiry.
       </p>
 
     </form>
@@ -1504,5 +1280,3 @@ function sendQuote(event) {
 
 </body>
 </html>
-
- 
