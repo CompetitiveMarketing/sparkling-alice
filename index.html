@@ -6,6 +6,7 @@
 <meta name="theme-color" content="#07090c">
 <meta name="description" content="Sparkling Alice premium vehicle detailing, touchless snow foam washing, interior cleaning, fleet detailing and after-wash vehicle storage in Alice Springs.">
 <title>Sparkling Alice | Premium Vehicle Care</title>
+<link rel="icon" type="image/png" sizes="512x512" href="/favicon.png">
 
 <style>
 :root{
@@ -50,20 +51,10 @@ h1,h2,h3{line-height:1.08}
   justify-content:space-between;
   gap:24px;
 }
-.logo{
-  display:flex;
-  align-items:center;
-  gap:13px;
-  font-weight:900;
-  letter-spacing:3px;
-  font-size:18px;
-}
 .logo img{
-  width:58px;
-  height:42px;
-  object-fit:contain;
+  width:140px;
+  height:auto;
 }
-.logo span span{color:var(--gold)}
 .nav-links{
   display:flex;
   align-items:center;
@@ -546,11 +537,7 @@ footer{
 /* MOBILE */
 @media(max-width:600px){
   section{padding:65px 0}
-  .logo{
-    font-size:16px;
-    letter-spacing:2px;
-  }
-  .logo img{display:none}
+  .logo img{width:122px}
   .hero{
     min-height:760px;
     background:
@@ -621,8 +608,7 @@ footer{
 <header class="navbar">
   <div class="container nav-inner">
     <a class="logo" href="#home" aria-label="Sparkling Alice home">
-      <img src="assets/1000006508.webp" alt="Sparkling Alice logo">
-      <span>SPARKLING <span>ALICE</span></span>
+      <img src="assets/1000006508.webp" alt="Sparkling Alice" width="710" height="320">
     </a>
 
     <button
@@ -883,9 +869,9 @@ footer{
   <div class="container why-grid">
     <img
       loading="lazy"
-      src="assets/interior-brush-cleaning.jpg"
-      alt="Detailing brush cleaning a vehicle dashboard and interior trim"
-      width="1536"
+      src="assets/1000006502.webp"
+      alt="Clean black vehicle interior"
+      width="1152"
       height="1536"
     >
 
@@ -907,7 +893,7 @@ footer{
         </div>
         <div class="feature">
           Cleaning tailored to your vehicle's interior
-                </div>
+        </div>
       </div>
 
       <a class="btn primary" href="#contact">
@@ -919,7 +905,8 @@ footer{
 
 <!-- PHOTO GALLERY -->
 <section class="showcase" id="work">
-  <div class="container">
+  <div class="container
+    ">
     <div class="section-head">
       <div class="section-label">Our Work</div>
       <h2>Real vehicles. Real results.</h2>
@@ -1178,9 +1165,24 @@ footer{
     </div>
 
     <form class="form" id="quoteForm" onsubmit="sendQuote(event)">
-      <input type="hidden" name="access_key" value="0b28346f-1794-4b9c-bc8e-6fcfb4daaf8c">
-<input type="hidden" name="subject" value="Sparkling Alice - New Quote Request">
-<input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+      <input
+        type="hidden"
+        name="access_key"
+        value="0b28346f-1794-4b9c-bc8e-6fcfb4daaf8c"
+      >
+      <input
+        type="hidden"
+        name="subject"
+        value="Sparkling Alice - New Quote Request"
+      >
+      <input
+        type="checkbox"
+        name="botcheck"
+        style="display:none"
+        tabindex="-1"
+        autocomplete="off"
+      >
+
       <div class="form-grid">
         <div class="field">
           <label for="name">Your Name *</label>
@@ -1255,10 +1257,10 @@ footer{
       </button>
 
       <p class="form-note">
-  Your enquiry will be sent directly to Sparkling Alice.
-  Prefer to call?
-  <a href="tel:0478525477">0478 525 477</a>.
-</p>
+        Sparkling Alice will be in touch about your quote.
+        Prefer to call?
+        <a href="tel:0478525477">0478 525 477</a>.
+      </p>
 
       <noscript>
         <p class="form-note">
@@ -1318,11 +1320,8 @@ navLinks.querySelectorAll("a").forEach(link => {
 document.addEventListener("keydown", event => {
   if (event.key === "Escape") closeMenu();
 });
-
-
 </script>
 
 <script src="quote-automation.js?v=1"></script>
 </body>
 </html>
-
